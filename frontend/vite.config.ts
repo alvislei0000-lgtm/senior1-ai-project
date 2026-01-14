@@ -3,19 +3,14 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: process.env.NODE_ENV === 'production' ? '/' : '/',
+  base: '/',
+  build: {
+    outDir: 'dist'
+  },
   server: {
     port: 3000,
     proxy: {
-      '/api': {
-        target: 'http://localhost:8000',
-        changeOrigin: true
-      }
+      '/api': 'http://localhost:8000'
     }
-  },
-  build: {
-    outDir: 'dist'
   }
 })
-
-
