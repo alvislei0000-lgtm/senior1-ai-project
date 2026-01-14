@@ -40,3 +40,18 @@ if __name__ == "__main__":
     uvicorn.run(app, host="0.0.0.0", port=port)
 
 app.mount("/", StaticFiles(directory="frontend/dist", html=True), name="static")
+
+# backend/main.py
+
+# ... 其他代碼 ...
+
+# 修改掛載邏輯，增加判斷
+frontend_dist = os.path.join(os.getcwd(), "frontend", "dist")
+
+if os.path.exists(frontend_dist):
+    app.mount("/", StaticFiles(directory=frontend_dist, html=True), name="static")
+else:
+    print(f"警告：找不到靜態資料夾 {frontend_dist}，請確認前端已編譯。")
+    @app.get("/")
+    async def fallback():
+        return {"message": "前端尚未編譯，請檢查 Render 建置流程。"}
