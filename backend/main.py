@@ -1,63 +1,69 @@
 import os
-from fastapi import FastAPI, HTTPException
+import json
+from fastapi import FastAPI, HTTPException, Query
 from fastapi.staticfiles import StaticFiles
 from fastapi.responses import FileResponse
 from fastapi.middleware.cors import CORSMiddleware
+from typing import Optional
 
 app = FastAPI()
 
-# 允許跨域 (開發時很有用)
+# 允許跨域
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
     allow_methods=["*"],
     allow_headers=["*"],
 )
-# backend/main.py
 
-# 確保你的 API 路由定義在「掛載靜態檔案」之前
+# --- 1. 定義 API 路由 (必須放在靜態檔案掛載之前) ---
+
 @app.get("/api/hardware")
-async def get_hardware():
-    # 先回傳一個測試資料，確認前端能抓到
-    return {
+async def get_hardware(
+    category: Optional[str] = None,
+    search: Optional[str] = None
+):
+    # 這裡模擬你 add_intel_ultra_cpus.py 裡的數據結構
+    hardware_data = {
         "items": [
-            {"category": "cpu", "model": "Intel Core Ultra 9 285K", "brand": "Intel"},
-            {"category": "gpu", "model": "RTX 4090", "brand": "NVIDIA"}
+            {"category": "cpu", "model": "Intel Core Ultra 9 285K", "brand": "Intel", "release_year": 2024},
+            {"category": "cpu", "model": "Intel Core Ultra 7 265K", "brand": "Intel", "release_year": 2024},
+            {"category": "gpu", "model": "NVIDIA RTX 4090", "brand": "NVIDIA", "vram_gb": 24},
+            {"category": "gpu", "model": "NVIDIA RTX 4080 Super", "brand": "NVIDIA", "vram_gb": 16}
         ]
     }
+    
+    # 簡單的過濾邏輯
+    results = hardware_data["items"]
+    if category:
+        results = [item for item in results if item["category"] == category]
+    if search:
+        results = [item for item in results if search.lower() in item["model"].lower()]
+        
+    return {"items": results}
 
-# 如果你的 App.tsx 或其他地方有去抓別的 API，也要補上
-@app.get("/api/benchmarks")
-async def get_benchmarks():
-    return {"data": []}
-
-# ... 原本的靜態檔案掛載邏輯保持在最後面 ...
-# 1. API 區域：所有的後端數據接口都要放在這裡
 @app.get("/api/health")
 async def health():
-    return {"status": "ok", "message": "Backend is running"}
+    return {"status": "healthy"}
 
-# 2. 靜態資源區域：處理編譯後的 JS/CSS
-frontend_dist = os.path.join(os.getcwd(), "frontend", "dist")
+# --- 2. 處理靜態檔案與 SPA 路由 (保持在最後) ---
+
+frontend_dist = os.path.join(os.getcwd(), "frontend/dist")
+
+# 掛載 assets
 assets_path = os.path.join(frontend_dist, "assets")
-
 if os.path.exists(assets_path):
     app.mount("/assets", StaticFiles(directory=assets_path), name="assets")
 
-# 3. SPA 路由區域：這是一個「全捕捉」邏輯
-@app.get("/{rest_of_path:path}")
-async def react_app(rest_of_path: str):
-    # 如果請求的是 api，但上面沒定義，直接給 404，不要給 index.html
-    if rest_of_path.startswith("api/"):
-        raise HTTPException(status_code=404, detail="API not found")
-
-    # 否則，檢查 index.html 是否存在並回傳
-    index_file = os.path.join(frontend_dist, "index.html")
-    if os.path.exists(index_file):
-        return FileResponse(index_file)
-    
-    # 如果連 index.html 都沒有，這代表前端沒編譯成功
-    return {
-        "error": "Frontend build not found",
-        "hint": "Check if 'npm run build' was executed in Render's Build Command"
-    }
+# 捕捉所有路由導向 index.html
+@app.get("/{full_path:path}")
+async def serve_react_app(full_path: str):
+    # 如果是找 API 但沒定義，給 404 JSON
+    if full_path.startswith("api/"):
+        raise HTTPException(status_code=404, detail="API route not found")
+        
+    # 其他通通給 index.html
+    index_path = os.path.join(frontend_dist, "index.html")
+    if os.path.exists(index_path):
+        return FileResponse(index_path)
+    return {"error": "Frontend dist not found. Did you run npm run build?"}
