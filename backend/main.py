@@ -7,7 +7,7 @@ from typing import Optional
 
 app = FastAPI()
 
-# 1. 徹底開放 CORS (解決跨網域問題)
+# 1. 解決 CORS (跨網域)
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
@@ -16,16 +16,17 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# --- 2. API 路由 (必須放在 StaticFiles 之前) ---
+# --- 2. API 路由 (必須放在靜態檔案掛載之前) ---
 
 @app.get("/api/hardware")
 async def get_hardware(category: Optional[str] = None):
+    # 這裡提供預設數據，確保前端能顯示選單
     data = {
         "items": [
-            {"category": "cpu", "model": "Intel Core Ultra 9 285K", "brand": "Intel"},
-            {"category": "cpu", "model": "AMD Ryzen 9 9950X", "brand": "AMD"},
-            {"category": "gpu", "model": "NVIDIA RTX 4090", "brand": "NVIDIA", "vram_options": [24]},
-            {"category": "gpu", "model": "NVIDIA RTX 4080 Super", "brand": "NVIDIA", "vram_options": [16]}
+            {"category": "cpu", "model": "Intel Core Ultra 9 285K", "brand": "Intel", "selected": False},
+            {"category": "cpu", "model": "AMD Ryzen 9 9950X", "brand": "AMD", "selected": False},
+            {"category": "gpu", "model": "NVIDIA RTX 4090", "brand": "NVIDIA", "selected": False, "vram_options": [24]},
+            {"category": "gpu", "model": "NVIDIA RTX 4080 Super", "brand": "NVIDIA", "selected": False, "vram_options": [16]}
         ]
     }
     if category:
@@ -45,43 +46,38 @@ async def search_benchmarks(request: Request):
             "cpu": "Ultra 9 285K",
             "avg_fps": 120,
             "confidence_score": 0.95,
-            "source": "AI 預測數據",
+            "source": "AI 模擬數據",
             "timestamp": "2024-10-25",
             "is_incomplete": False
         }]
     }
 
-# --- 3. 靜態檔案與路徑定位 ---
-@app.get("/{full_path:path}")
-async def serve_react_app(full_path: str):
-    # 這是最強診斷工具：列出目前伺服器路徑下到底有什麼檔案
-    if full_path == "debug-path":
-        import os
-        return {
-            "cwd": os.getcwd(),
-            "list_dir_root": os.listdir("."),
-            "frontend_exists": os.path.exists("frontend"),
-            "dist_exists": os.path.exists("frontend/dist") if os.path.exists("frontend") else False
-        }
-    # ... 原本的代碼 ...
-# 自動獲取 frontend/dist 的絕對路徑
-# __file__ 是 backend/main.py，dirname 兩次回到根目錄
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+# --- 3. 靜態檔案定位與 SPA 處理 ---
+
+# 取得 main.py 的絕對路徑
+CURRENT_DIR = os.path.dirname(os.path.abspath(__file__))
+# 往上跳兩層到根目錄，再進入 frontend/dist
+BASE_DIR = os.path.dirname(CURRENT_DIR)
 frontend_dist = os.path.join(BASE_DIR, "frontend", "dist")
 
-# 掛載 assets (js/css)
+# 掛載 JS/CSS 資源
 assets_path = os.path.join(frontend_dist, "assets")
 if os.path.exists(assets_path):
     app.mount("/assets", StaticFiles(directory=assets_path), name="assets")
 
-# 全捕捉路由：處理前端所有頁面 (如 /benchmark)
+# 全捕捉路由 (確保 /benchmark 重新整理不報錯)
 @app.get("/{full_path:path}")
 async def serve_react_app(full_path: str):
+    # 排除 API 請求，避免 API 404 卻回傳 HTML
     if full_path.startswith("api/"):
-        raise HTTPException(status_code=404, detail="API Not Found")
-    
+        raise HTTPException(status_code=404, detail="API route not found")
+        
     index_path = os.path.join(frontend_dist, "index.html")
     if os.path.exists(index_path):
         return FileResponse(index_path)
     
-    return {"error": "前端編譯檔案 (dist/index.html) 不存在", "debug_path": index_path}
+    return {
+        "error": "前端編譯檔案 (index.html) 未找到",
+        "debug_current_dir": CURRENT_DIR,
+        "debug_expected_path": index_path
+    }
