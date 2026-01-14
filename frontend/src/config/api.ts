@@ -1,12 +1,8 @@
-// frontend/src/config/api.ts
-
-// 判斷是否為開發環境
 const isDevelopment = window.location.hostname === 'localhost';
 
 /**
- * 關鍵：在生產環境 (Render) 必須為空字串 ""
- * 這樣請求會變成相對路徑 (例如 "/api/hardware")
- * 不會觸發 CORS 阻擋，也不會因為網域多一個 '1' 而失效
+ * 生產環境設為空字串 ''，瀏覽器會自動請求同網域路徑
+ * 確保請求開頭帶有 /，例如 fetch("/api/hardware")
  */
 export const API_BASE_URL = isDevelopment 
   ? 'http://localhost:8000' 
