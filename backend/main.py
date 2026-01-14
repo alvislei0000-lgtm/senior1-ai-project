@@ -13,7 +13,25 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+# backend/main.py
 
+# 確保你的 API 路由定義在「掛載靜態檔案」之前
+@app.get("/api/hardware")
+async def get_hardware():
+    # 先回傳一個測試資料，確認前端能抓到
+    return {
+        "items": [
+            {"category": "cpu", "model": "Intel Core Ultra 9 285K", "brand": "Intel"},
+            {"category": "gpu", "model": "RTX 4090", "brand": "NVIDIA"}
+        ]
+    }
+
+# 如果你的 App.tsx 或其他地方有去抓別的 API，也要補上
+@app.get("/api/benchmarks")
+async def get_benchmarks():
+    return {"data": []}
+
+# ... 原本的靜態檔案掛載邏輯保持在最後面 ...
 # 1. API 區域：所有的後端數據接口都要放在這裡
 @app.get("/api/health")
 async def health():
