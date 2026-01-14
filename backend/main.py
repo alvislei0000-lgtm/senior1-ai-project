@@ -46,12 +46,15 @@ app.mount("/", StaticFiles(directory="frontend/dist", html=True), name="static")
 # ... 其他代碼 ...
 
 # 修改掛載邏輯，增加判斷
-frontend_dist = os.path.join(os.getcwd(), "frontend", "dist")
+frontend_dist_path = os.path.join(os.getcwd(), "frontend", "dist")
 
-if os.path.exists(frontend_dist):
-    app.mount("/", StaticFiles(directory=frontend_dist, html=True), name="static")
+if os.path.exists(frontend_dist_path):
+    app.mount("/", StaticFiles(directory=frontend_dist_path, html=True), name="static")
 else:
-    print(f"警告：找不到靜態資料夾 {frontend_dist}，請確認前端已編譯。")
+    # 如果找不到目錄，回傳一個提示頁面而不是直接崩潰
     @app.get("/")
-    async def fallback():
-        return {"message": "前端尚未編譯，請檢查 Render 建置流程。"}
+    async def root():
+        return {
+            "status": "backend_ready",
+            "message": "前端尚未編譯。請確認 Render 的 Build Command 包含 'npm run build'"
+        }
