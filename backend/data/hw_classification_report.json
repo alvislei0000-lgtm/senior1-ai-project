@@ -1,0 +1,192 @@
+{
+  "cpu_count": 105,
+  "gpu_count": 84,
+  "cpu_groups": {
+    "Intel Core": {
+      "count": 49,
+      "examples": [
+        {
+          "key": "Intel Xeon W-3300",
+          "score": 2.391
+        },
+        {
+          "key": "Intel Core i3-7100",
+          "score": 0.7
+        },
+        {
+          "key": "Intel Core i3-7350K",
+          "score": 0.8
+        },
+        {
+          "key": "Intel Core i7-7700K",
+          "score": 1.15
+        },
+        {
+          "key": "Intel Core i5-7600K",
+          "score": 1.0
+        }
+      ]
+    },
+    "AMD Ryzen": {
+      "count": 50,
+      "examples": [
+        {
+          "key": "AMD Ryzen 7 1800X",
+          "score": 1.0
+        },
+        {
+          "key": "AMD Ryzen 7 1700X",
+          "score": 0.95
+        },
+        {
+          "key": "AMD Ryzen 7 1700",
+          "score": 0.9
+        },
+        {
+          "key": "AMD Ryzen 5 1600X",
+          "score": 0.9
+        },
+        {
+          "key": "AMD Ryzen 5 1600",
+          "score": 0.85
+        }
+      ]
+    },
+    "Intel Core Ultra": {
+      "count": 6,
+      "examples": [
+        {
+          "key": "Intel Core Ultra 9 285K",
+          "score": 2.5
+        },
+        {
+          "key": "Intel Core Ultra 9 285",
+          "score": 2.4
+        },
+        {
+          "key": "Intel Core Ultra 7 265K",
+          "score": 2.3
+        },
+        {
+          "key": "Intel Core Ultra 7 265",
+          "score": 2.2
+        },
+        {
+          "key": "Intel Core Ultra 5 245K",
+          "score": 2.1
+        }
+      ]
+    }
+  },
+  "gpu_groups": {
+    "NVIDIA RTX": {
+      "count": 34,
+      "examples": [
+        {
+          "key": "RTX 5090",
+          "score": 2.6
+        },
+        {
+          "key": "RTX 5080",
+          "score": 2.4
+        },
+        {
+          "key": "RTX 5070",
+          "score": 2.05
+        },
+        {
+          "key": "RTX 5060",
+          "score": 1.6
+        },
+        {
+          "key": "RTX 5050",
+          "score": 1.4
+        }
+      ]
+    },
+    "NVIDIA GTX": {
+      "count": 14,
+      "examples": [
+        {
+          "key": "GTX 1660 Super",
+          "score": 1.1
+        },
+        {
+          "key": "GTX 1660",
+          "score": 1.05
+        },
+        {
+          "key": "GTX 1650",
+          "score": 0.85
+        },
+        {
+          "key": "GTX 1080 Ti",
+          "score": 1.5
+        },
+        {
+          "key": "GTX 1080",
+          "score": 1.4
+        }
+      ]
+    },
+    "AMD RX": {
+      "count": 28,
+      "examples": [
+        {
+          "key": "RX 7900 XTX",
+          "score": 2.35
+        },
+        {
+          "key": "RX 7900 XT",
+          "score": 2.25
+        },
+        {
+          "key": "RX 7800 XT",
+          "score": 2.1
+        },
+        {
+          "key": "RX 7700 XT",
+          "score": 1.9
+        },
+        {
+          "key": "RX 7600",
+          "score": 1.45
+        }
+      ]
+    },
+    "Other GPU": {
+      "count": 1,
+      "examples": [
+        {
+          "key": "Integrated Intel UHD",
+          "score": 0.7
+        }
+      ]
+    },
+    "Intel Arc": {
+      "count": 7,
+      "examples": [
+        {
+          "key": "Arc A750",
+          "score": 1.45
+        },
+        {
+          "key": "Arc A770",
+          "score": 1.75
+        },
+        {
+          "key": "Arc A580",
+          "score": 1.35
+        },
+        {
+          "key": "Arc A380",
+          "score": 1.2
+        },
+        {
+          "key": "Arc A310",
+          "score": 1.05
+        }
+      ]
+    }
+  }
+}

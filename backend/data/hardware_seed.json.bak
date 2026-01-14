@@ -1,0 +1,2683 @@
+{
+  "items": [
+    {
+      "category": "gpu",
+      "model": "RTX 5090",
+      "generation": "Blackwell",
+      "release_year": 2025,
+      "brand": "NVIDIA",
+      "vram_gb": 32,
+      "ram_gb": 64
+    },
+    {
+      "category": "gpu",
+      "model": "RTX 5080",
+      "generation": "Blackwell",
+      "release_year": 2025,
+      "brand": "NVIDIA",
+      "vram_gb": 16,
+      "ram_gb": 32
+    },
+    {
+      "category": "gpu",
+      "model": "RTX 5070 Ti",
+      "generation": "Blackwell",
+      "release_year": 2025,
+      "brand": "NVIDIA",
+      "vram_gb": 16,
+      "ram_gb": 32
+    },
+    {
+      "category": "gpu",
+      "model": "RTX 5070",
+      "generation": "Blackwell",
+      "release_year": 2025,
+      "brand": "NVIDIA",
+      "vram_gb": 12,
+      "ram_gb": 32
+    },
+    {
+      "category": "gpu",
+      "model": "RTX 5060 Ti",
+      "generation": "Blackwell",
+      "release_year": 2024,
+      "brand": "NVIDIA",
+      "vram_gb": 16,
+      "ram_gb": 32
+    },
+    {
+      "category": "gpu",
+      "model": "RTX 5060",
+      "generation": "Blackwell",
+      "release_year": 2024,
+      "brand": "NVIDIA",
+      "vram_gb": 8,
+      "ram_gb": 16
+    },
+    {
+      "category": "gpu",
+      "model": "GTX 1660 Super",
+      "generation": "Turing",
+      "release_year": 2019,
+      "brand": "NVIDIA",
+      "vram_gb": 6,
+      "ram_gb": 16
+    },
+    {
+      "category": "gpu",
+      "model": "GTX 1660",
+      "generation": "Turing",
+      "release_year": 2019,
+      "brand": "NVIDIA",
+      "vram_gb": 6,
+      "ram_gb": 16
+    },
+    {
+      "category": "gpu",
+      "model": "GTX 1650",
+      "generation": "Turing",
+      "release_year": 2019,
+      "brand": "NVIDIA",
+      "vram_gb": 4,
+      "ram_gb": 8
+    },
+    {
+      "category": "gpu",
+      "model": "GTX 1080 Ti",
+      "generation": "Pascal",
+      "release_year": 2017,
+      "brand": "NVIDIA",
+      "vram_gb": 11,
+      "ram_gb": 16
+    },
+    {
+      "category": "gpu",
+      "model": "GTX 1080",
+      "generation": "Pascal",
+      "release_year": 2016,
+      "brand": "NVIDIA",
+      "vram_gb": 8,
+      "ram_gb": 16
+    },
+    {
+      "category": "gpu",
+      "model": "GTX 1070",
+      "generation": "Pascal",
+      "release_year": 2016,
+      "brand": "NVIDIA",
+      "vram_gb": 8,
+      "ram_gb": 16
+    },
+    {
+      "category": "gpu",
+      "model": "GTX 1060 6GB",
+      "generation": "Pascal",
+      "release_year": 2016,
+      "brand": "NVIDIA",
+      "vram_gb": 6,
+      "ram_gb": 16
+    },
+    {
+      "category": "gpu",
+      "model": "GTX 1050 Ti",
+      "generation": "Pascal",
+      "release_year": 2016,
+      "brand": "NVIDIA",
+      "vram_gb": 4,
+      "ram_gb": 8
+    },
+    {
+      "category": "gpu",
+      "model": "RX 480",
+      "generation": "Polaris",
+      "release_year": 2016,
+      "brand": "AMD",
+      "vram_gb": 8,
+      "ram_gb": 16
+    },
+    {
+      "category": "gpu",
+      "model": "RX 470",
+      "generation": "Polaris",
+      "release_year": 2016,
+      "brand": "AMD",
+      "vram_gb": 4,
+      "ram_gb": 8
+    },
+    {
+      "category": "gpu",
+      "model": "RX 580",
+      "generation": "Polaris",
+      "release_year": 2017,
+      "brand": "AMD",
+      "vram_gb": 8,
+      "ram_gb": 16
+    },
+    {
+      "category": "gpu",
+      "model": "RX Vega 56",
+      "generation": "Vega",
+      "release_year": 2017,
+      "brand": "AMD",
+      "vram_gb": 8,
+      "ram_gb": 16
+    },
+    {
+      "category": "gpu",
+      "model": "RX Vega 64",
+      "generation": "Vega",
+      "release_year": 2017,
+      "brand": "AMD",
+      "vram_gb": 8,
+      "ram_gb": 16
+    },
+    {
+      "category": "gpu",
+      "model": "RTX 2080 Ti",
+      "generation": "Turing",
+      "release_year": 2018,
+      "brand": "NVIDIA",
+      "vram_gb": 11,
+      "ram_gb": 16
+    },
+    {
+      "category": "gpu",
+      "model": "RTX 2080",
+      "generation": "Turing",
+      "release_year": 2018,
+      "brand": "NVIDIA",
+      "vram_gb": 8,
+      "ram_gb": 16
+    },
+    {
+      "category": "gpu",
+      "model": "RTX 2070",
+      "generation": "Turing",
+      "release_year": 2018,
+      "brand": "NVIDIA",
+      "vram_gb": 8,
+      "ram_gb": 16
+    },
+    {
+      "category": "gpu",
+      "model": "RTX 2060",
+      "generation": "Turing",
+      "release_year": 2019,
+      "brand": "NVIDIA",
+      "vram_gb": 6,
+      "ram_gb": 16
+    },
+    {
+      "category": "gpu",
+      "model": "RX 5700 XT",
+      "generation": "RDNA",
+      "release_year": 2019,
+      "brand": "AMD",
+      "vram_gb": 8,
+      "ram_gb": 16
+    },
+    {
+      "category": "gpu",
+      "model": "RTX 3070",
+      "generation": "Ampere",
+      "release_year": 2020,
+      "brand": "NVIDIA",
+      "vram_gb": 8,
+      "ram_gb": 16
+    },
+    {
+      "category": "gpu",
+      "model": "RTX 3080 Ti",
+      "generation": "Ampere",
+      "release_year": 2021,
+      "brand": "NVIDIA",
+      "vram_gb": 12,
+      "ram_gb": 32
+    },
+    {
+      "category": "gpu",
+      "model": "RTX 3060",
+      "generation": "Ampere",
+      "release_year": 2021,
+      "brand": "NVIDIA",
+      "vram_gb": 12,
+      "ram_gb": 16
+    },
+    {
+      "category": "gpu",
+      "model": "RX 6700 XT",
+      "generation": "RDNA 2",
+      "release_year": 2021,
+      "brand": "AMD",
+      "vram_gb": 12,
+      "ram_gb": 16
+    },
+    {
+      "category": "gpu",
+      "model": "RX 6600",
+      "generation": "RDNA 2",
+      "release_year": 2021,
+      "brand": "AMD",
+      "vram_gb": 8,
+      "ram_gb": 16
+    },
+    {
+      "category": "gpu",
+      "model": "Arc A750",
+      "generation": "Alchemist",
+      "release_year": 2022,
+      "brand": "Intel",
+      "vram_gb": 8,
+      "ram_gb": 16
+    },
+    {
+      "category": "gpu",
+      "model": "RTX 4060",
+      "generation": "Ada",
+      "release_year": 2023,
+      "brand": "NVIDIA",
+      "vram_gb": 8,
+      "ram_gb": 16
+    },
+    {
+      "category": "gpu",
+      "model": "RTX 4070 Ti",
+      "generation": "Ada",
+      "release_year": 2023,
+      "brand": "NVIDIA",
+      "vram_gb": 12,
+      "ram_gb": 32
+    },
+    {
+      "category": "gpu",
+      "model": "RX 7800 XT",
+      "generation": "RDNA 3",
+      "release_year": 2023,
+      "brand": "AMD",
+      "vram_gb": 16,
+      "ram_gb": 32
+    },
+    {
+      "category": "gpu",
+      "model": "RX 7700 XT",
+      "generation": "RDNA 3",
+      "release_year": 2023,
+      "brand": "AMD",
+      "vram_gb": 12,
+      "ram_gb": 32
+    },
+    {
+      "category": "gpu",
+      "model": "RX 7600",
+      "generation": "RDNA 3",
+      "release_year": 2023,
+      "brand": "AMD",
+      "vram_gb": 8,
+      "ram_gb": 16
+    },
+    {
+      "category": "gpu",
+      "model": "RTX 4080 SUPER",
+      "generation": "Ada",
+      "release_year": 2024,
+      "brand": "NVIDIA",
+      "vram_gb": 16,
+      "ram_gb": 32
+    },
+    {
+      "category": "gpu",
+      "model": "RTX 4090",
+      "generation": "Ada",
+      "release_year": 2022,
+      "brand": "NVIDIA",
+      "vram_gb": 24,
+      "ram_gb": 32
+    },
+    {
+      "category": "gpu",
+      "model": "RTX 4080",
+      "generation": "Ada",
+      "release_year": 2022,
+      "brand": "NVIDIA",
+      "vram_gb": 16,
+      "ram_gb": 32
+    },
+    {
+      "category": "gpu",
+      "model": "RTX 4070",
+      "generation": "Ada",
+      "release_year": 2023,
+      "brand": "NVIDIA",
+      "vram_gb": 12,
+      "ram_gb": 16
+    },
+    {
+      "category": "gpu",
+      "model": "RTX 3090",
+      "generation": "Ampere",
+      "release_year": 2020,
+      "brand": "NVIDIA",
+      "vram_gb": 24,
+      "ram_gb": 32
+    },
+    {
+      "category": "gpu",
+      "model": "RTX 3090 Ti",
+      "generation": "Ampere",
+      "release_year": 2022,
+      "brand": "NVIDIA",
+      "vram_gb": 24,
+      "ram_gb": 32
+    },
+    {
+      "category": "gpu",
+      "model": "RTX 3080",
+      "generation": "Ampere",
+      "release_year": 2020,
+      "brand": "NVIDIA",
+      "vram_gb": 10,
+      "ram_gb": 16
+    },
+    {
+      "category": "gpu",
+      "model": "RX 7900 XTX",
+      "generation": "RDNA 3",
+      "release_year": 2022,
+      "brand": "AMD",
+      "vram_gb": 24,
+      "ram_gb": 32
+    },
+    {
+      "category": "gpu",
+      "model": "RX 7900 XT",
+      "generation": "RDNA 3",
+      "release_year": 2022,
+      "brand": "AMD",
+      "vram_gb": 20,
+      "ram_gb": 32
+    },
+    {
+      "category": "gpu",
+      "model": "RX 6900 XT",
+      "generation": "RDNA 2",
+      "release_year": 2020,
+      "brand": "AMD",
+      "vram_gb": 16,
+      "ram_gb": 16
+    },
+    {
+      "category": "gpu",
+      "model": "RX 6800 XT",
+      "generation": "RDNA 2",
+      "release_year": 2020,
+      "brand": "AMD",
+      "vram_gb": 16,
+      "ram_gb": 16
+    },
+    {
+      "category": "gpu",
+      "model": "Arc A770",
+      "generation": "Alchemist",
+      "release_year": 2022,
+      "brand": "Intel",
+      "vram_gb": 8,
+      "ram_gb": 16
+    },
+    {
+      "category": "gpu",
+      "model": "Arc A580",
+      "generation": "Alchemist",
+      "release_year": 2023,
+      "brand": "Intel",
+      "vram_gb": 8,
+      "ram_gb": 16
+    },
+    {
+      "category": "gpu",
+      "model": "Arc A380",
+      "generation": "Alchemist",
+      "release_year": 2022,
+      "brand": "Intel",
+      "vram_gb": 6,
+      "ram_gb": 16
+    },
+    {
+      "category": "gpu",
+      "model": "Arc A310",
+      "generation": "Alchemist",
+      "release_year": 2022,
+      "brand": "Intel",
+      "vram_gb": 4,
+      "ram_gb": 8
+    },
+    {
+      "category": "gpu",
+      "model": "GTX 1070 Ti",
+      "generation": "Pascal",
+      "release_year": 2017,
+      "brand": "NVIDIA",
+      "vram_gb": 8,
+      "ram_gb": 16
+    },
+    {
+      "category": "gpu",
+      "model": "GTX 1060 3GB",
+      "generation": "Pascal",
+      "release_year": 2016,
+      "brand": "NVIDIA",
+      "vram_gb": 3,
+      "ram_gb": 8
+    },
+    {
+      "category": "gpu",
+      "model": "GTX 1050",
+      "generation": "Pascal",
+      "release_year": 2016,
+      "brand": "NVIDIA",
+      "vram_gb": 2,
+      "ram_gb": 8
+    },
+    {
+      "category": "gpu",
+      "model": "GTX 1030",
+      "generation": "Pascal",
+      "release_year": 2017,
+      "brand": "NVIDIA",
+      "vram_gb": 2,
+      "ram_gb": 8
+    },
+    {
+      "category": "gpu",
+      "model": "Radeon VII",
+      "generation": "Vega",
+      "release_year": 2019,
+      "brand": "AMD",
+      "vram_gb": 16,
+      "ram_gb": 16
+    },
+    {
+      "category": "gpu",
+      "model": "RX 5700",
+      "generation": "RDNA",
+      "release_year": 2019,
+      "brand": "AMD",
+      "vram_gb": 8,
+      "ram_gb": 16
+    },
+    {
+      "category": "gpu",
+      "model": "RX 5600 XT",
+      "generation": "RDNA",
+      "release_year": 2020,
+      "brand": "AMD",
+      "vram_gb": 6,
+      "ram_gb": 16
+    },
+    {
+      "category": "gpu",
+      "model": "RX 5500 XT",
+      "generation": "RDNA",
+      "release_year": 2019,
+      "brand": "AMD",
+      "vram_gb": 8,
+      "ram_gb": 16
+    },
+    {
+      "category": "gpu",
+      "model": "RTX 2070 SUPER",
+      "generation": "Turing",
+      "release_year": 2019,
+      "brand": "NVIDIA",
+      "vram_gb": 8,
+      "ram_gb": 16
+    },
+    {
+      "category": "gpu",
+      "model": "RTX 2080 SUPER",
+      "generation": "Turing",
+      "release_year": 2019,
+      "brand": "NVIDIA",
+      "vram_gb": 8,
+      "ram_gb": 16
+    },
+    {
+      "category": "gpu",
+      "model": "RTX 2060 SUPER",
+      "generation": "Turing",
+      "release_year": 2019,
+      "brand": "NVIDIA",
+      "vram_gb": 8,
+      "ram_gb": 16
+    },
+    {
+      "category": "gpu",
+      "model": "GTX 1660 Ti",
+      "generation": "Turing",
+      "release_year": 2019,
+      "brand": "NVIDIA",
+      "vram_gb": 6,
+      "ram_gb": 16
+    },
+    {
+      "category": "gpu",
+      "model": "GTX 1650 Super",
+      "generation": "Turing",
+      "release_year": 2019,
+      "brand": "NVIDIA",
+      "vram_gb": 4,
+      "ram_gb": 16
+    },
+    {
+      "category": "gpu",
+      "model": "RTX 3060 Ti",
+      "generation": "Ampere",
+      "release_year": 2020,
+      "brand": "NVIDIA",
+      "vram_gb": 8,
+      "ram_gb": 16
+    },
+    {
+      "category": "gpu",
+      "model": "RTX 3070 Ti",
+      "generation": "Ampere",
+      "release_year": 2021,
+      "brand": "NVIDIA",
+      "vram_gb": 8,
+      "ram_gb": 16
+    },
+    {
+      "category": "gpu",
+      "model": "RTX 3080 12GB",
+      "generation": "Ampere",
+      "release_year": 2022,
+      "brand": "NVIDIA",
+      "vram_gb": 12,
+      "ram_gb": 32
+    },
+    {
+      "category": "gpu",
+      "model": "RTX 3050",
+      "generation": "Ampere",
+      "release_year": 2022,
+      "brand": "NVIDIA",
+      "vram_gb": 8,
+      "ram_gb": 16
+    },
+    {
+      "category": "gpu",
+      "model": "RX 6950 XT",
+      "generation": "RDNA 2",
+      "release_year": 2022,
+      "brand": "AMD",
+      "vram_gb": 16,
+      "ram_gb": 32
+    },
+    {
+      "category": "gpu",
+      "model": "RX 6800",
+      "generation": "RDNA 2",
+      "release_year": 2020,
+      "brand": "AMD",
+      "vram_gb": 16,
+      "ram_gb": 16
+    },
+    {
+      "category": "gpu",
+      "model": "RX 6750 XT",
+      "generation": "RDNA 2",
+      "release_year": 2022,
+      "brand": "AMD",
+      "vram_gb": 12,
+      "ram_gb": 16
+    },
+    {
+      "category": "gpu",
+      "model": "RX 6650 XT",
+      "generation": "RDNA 2",
+      "release_year": 2022,
+      "brand": "AMD",
+      "vram_gb": 8,
+      "ram_gb": 16
+    },
+    {
+      "category": "gpu",
+      "model": "RX 6600 XT",
+      "generation": "RDNA 2",
+      "release_year": 2021,
+      "brand": "AMD",
+      "vram_gb": 8,
+      "ram_gb": 16
+    },
+    {
+      "category": "gpu",
+      "model": "RX 6500 XT",
+      "generation": "RDNA 2",
+      "release_year": 2022,
+      "brand": "AMD",
+      "vram_gb": 4,
+      "ram_gb": 8
+    },
+    {
+      "category": "gpu",
+      "model": "RX 6400",
+      "generation": "RDNA 2",
+      "release_year": 2022,
+      "brand": "AMD",
+      "vram_gb": 4,
+      "ram_gb": 8
+    },
+    {
+      "category": "gpu",
+      "model": "RTX 4070 SUPER",
+      "generation": "Ada",
+      "release_year": 2024,
+      "brand": "NVIDIA",
+      "vram_gb": 12,
+      "ram_gb": 32
+    },
+    {
+      "category": "gpu",
+      "model": "RTX 4070 Ti SUPER",
+      "generation": "Ada",
+      "release_year": 2024,
+      "brand": "NVIDIA",
+      "vram_gb": 16,
+      "ram_gb": 32
+    },
+    {
+      "category": "gpu",
+      "model": "RTX 4060 Ti 16GB",
+      "generation": "Ada",
+      "release_year": 2023,
+      "brand": "NVIDIA",
+      "vram_gb": 16,
+      "ram_gb": 32
+    },
+    {
+      "category": "gpu",
+      "model": "RTX 4060 Ti",
+      "generation": "Ada",
+      "release_year": 2023,
+      "brand": "NVIDIA",
+      "vram_gb": 8,
+      "ram_gb": 16
+    },
+    {
+      "category": "gpu",
+      "model": "RX 7900 GRE",
+      "generation": "RDNA 3",
+      "release_year": 2024,
+      "brand": "AMD",
+      "vram_gb": 16,
+      "ram_gb": 32
+    },
+    {
+      "category": "gpu",
+      "model": "RX 7600 XT",
+      "generation": "RDNA 3",
+      "release_year": 2024,
+      "brand": "AMD",
+      "vram_gb": 16,
+      "ram_gb": 16
+    },
+    {
+      "category": "storage",
+      "model": "Samsung 860 EVO 1TB",
+      "generation": "SATA",
+      "release_year": 2016,
+      "brand": "Samsung",
+      "capacity_gb": 1000
+    },
+    {
+      "category": "storage",
+      "model": "Samsung 960 EVO 1TB",
+      "generation": "NVMe",
+      "release_year": 2016,
+      "brand": "Samsung",
+      "capacity_gb": 1000
+    },
+    {
+      "category": "storage",
+      "model": "Seagate Barracuda 2TB",
+      "generation": "HDD",
+      "release_year": 2016,
+      "brand": "Seagate",
+      "capacity_gb": 2000
+    },
+    {
+      "category": "storage",
+      "model": "WD Blue 3D NAND 1TB",
+      "generation": "SATA",
+      "release_year": 2017,
+      "brand": "Western Digital",
+      "capacity_gb": 1000
+    },
+    {
+      "category": "storage",
+      "model": "WD Blue 2TB",
+      "generation": "HDD",
+      "release_year": 2017,
+      "brand": "Western Digital",
+      "capacity_gb": 2000
+    },
+    {
+      "category": "storage",
+      "model": "WD Black SN750 1TB",
+      "generation": "NVMe",
+      "release_year": 2018,
+      "brand": "Western Digital",
+      "capacity_gb": 1000
+    },
+    {
+      "category": "storage",
+      "model": "Samsung 970 EVO Plus 1TB",
+      "generation": "NVMe",
+      "release_year": 2019,
+      "brand": "Samsung",
+      "capacity_gb": 1000
+    },
+    {
+      "category": "storage",
+      "model": "Corsair MP600 1TB",
+      "generation": "NVMe",
+      "release_year": 2019,
+      "brand": "Corsair",
+      "capacity_gb": 1000
+    },
+    {
+      "category": "storage",
+      "model": "Samsung 980 PRO 1TB",
+      "generation": "NVMe",
+      "release_year": 2020,
+      "brand": "Samsung",
+      "capacity_gb": 1000
+    },
+    {
+      "category": "storage",
+      "model": "WD Black SN850 1TB",
+      "generation": "NVMe",
+      "release_year": 2020,
+      "brand": "Western Digital",
+      "capacity_gb": 1000
+    },
+    {
+      "category": "storage",
+      "model": "Crucial P5 Plus 1TB",
+      "generation": "NVMe",
+      "release_year": 2021,
+      "brand": "Crucial",
+      "capacity_gb": 1000
+    },
+    {
+      "category": "storage",
+      "model": "Seagate FireCuda 530 1TB",
+      "generation": "NVMe",
+      "release_year": 2021,
+      "brand": "Seagate",
+      "capacity_gb": 1000
+    },
+    {
+      "category": "storage",
+      "model": "WD Blue SN570 1TB",
+      "generation": "NVMe",
+      "release_year": 2021,
+      "brand": "Western Digital",
+      "capacity_gb": 1000
+    },
+    {
+      "category": "storage",
+      "model": "Crucial P3 1TB",
+      "generation": "NVMe",
+      "release_year": 2022,
+      "brand": "Crucial",
+      "capacity_gb": 1000
+    },
+    {
+      "category": "storage",
+      "model": "Solidigm P44 Pro 1TB",
+      "generation": "NVMe",
+      "release_year": 2022,
+      "brand": "Solidigm",
+      "capacity_gb": 1000
+    },
+    {
+      "category": "storage",
+      "model": "Samsung 870 EVO",
+      "generation": "SATA",
+      "release_year": 2020,
+      "brand": "Samsung",
+      "capacity_gb": 1000
+    },
+    {
+      "category": "storage",
+      "model": "Samsung 990 PRO",
+      "generation": "NVMe",
+      "release_year": 2022,
+      "brand": "Samsung",
+      "capacity_gb": 1000
+    },
+    {
+      "category": "storage",
+      "model": "WD Black SN850X",
+      "generation": "NVMe",
+      "release_year": 2022,
+      "brand": "Western Digital",
+      "capacity_gb": 2000
+    },
+    {
+      "category": "storage",
+      "model": "Crucial T500",
+      "generation": "NVMe",
+      "release_year": 2023,
+      "brand": "Crucial",
+      "capacity_gb": 1000
+    },
+    {
+      "category": "storage",
+      "model": "Kingston KC3000",
+      "generation": "NVMe",
+      "release_year": 2021,
+      "brand": "Kingston",
+      "capacity_gb": 2000
+    },
+    {
+      "category": "storage",
+      "model": "Crucial MX500",
+      "generation": "SATA",
+      "release_year": 2018,
+      "brand": "Crucial",
+      "capacity_gb": 1000
+    },
+    {
+      "category": "storage",
+      "model": "Seagate Barracuda 4TB",
+      "generation": "HDD",
+      "release_year": 2019,
+      "brand": "Seagate",
+      "capacity_gb": 4000
+    },
+    {
+      "category": "storage",
+      "model": "WD Blue 1TB",
+      "generation": "HDD",
+      "release_year": 2020,
+      "brand": "Western Digital",
+      "capacity_gb": 1000
+    },
+    {
+      "category": "storage",
+      "model": "WD Blue SA510 1TB",
+      "generation": "SATA",
+      "release_year": 2022,
+      "brand": "Western Digital",
+      "capacity_gb": 1000
+    },
+    {
+      "category": "storage",
+      "model": "Samsung 870 QVO 1TB",
+      "generation": "SATA",
+      "release_year": 2020,
+      "brand": "Samsung",
+      "capacity_gb": 1000
+    },
+    {
+      "category": "storage",
+      "model": "Crucial BX500 1TB",
+      "generation": "SATA",
+      "release_year": 2019,
+      "brand": "Crucial",
+      "capacity_gb": 1000
+    },
+    {
+      "category": "storage",
+      "model": "SanDisk Ultra 3D 1TB",
+      "generation": "SATA",
+      "release_year": 2017,
+      "brand": "SanDisk",
+      "capacity_gb": 1000
+    },
+    {
+      "category": "storage",
+      "model": "Kingston A400 480GB",
+      "generation": "SATA",
+      "release_year": 2016,
+      "brand": "Kingston",
+      "capacity_gb": 480
+    },
+    {
+      "category": "storage",
+      "model": "Seagate IronWolf 4TB",
+      "generation": "HDD",
+      "release_year": 2020,
+      "brand": "Seagate",
+      "capacity_gb": 4000
+    },
+    {
+      "category": "storage",
+      "model": "WD Red Plus 4TB",
+      "generation": "HDD",
+      "release_year": 2020,
+      "brand": "Western Digital",
+      "capacity_gb": 4000
+    },
+    {
+      "category": "storage",
+      "model": "Toshiba N300 4TB",
+      "generation": "HDD",
+      "release_year": 2021,
+      "brand": "Toshiba",
+      "capacity_gb": 4000
+    },
+    {
+      "category": "cpu",
+      "model": "Intel Core i3-7100",
+      "generation": "7th Gen",
+      "release_year": 2017,
+      "brand": "Intel",
+      "vram_gb": 0,
+      "ram_gb": 8
+    },
+    {
+      "category": "cpu",
+      "model": "Intel Core i3-7350K",
+      "generation": "7th Gen",
+      "release_year": 2017,
+      "brand": "Intel",
+      "vram_gb": 0,
+      "ram_gb": 8
+    },
+    {
+      "category": "cpu",
+      "model": "Intel Core i7-7700K",
+      "generation": "7th Gen",
+      "release_year": 2017,
+      "brand": "Intel",
+      "vram_gb": 0,
+      "ram_gb": 16
+    },
+    {
+      "category": "cpu",
+      "model": "Intel Core i5-7600K",
+      "generation": "7th Gen",
+      "release_year": 2017,
+      "brand": "Intel",
+      "vram_gb": 0,
+      "ram_gb": 16
+    },
+    {
+      "category": "cpu",
+      "model": "Intel Core i7-7700",
+      "generation": "7th Gen",
+      "release_year": 2017,
+      "brand": "Intel",
+      "vram_gb": 0,
+      "ram_gb": 16
+    },
+    {
+      "category": "cpu",
+      "model": "Intel Core i5-7500",
+      "generation": "7th Gen",
+      "release_year": 2017,
+      "brand": "Intel",
+      "vram_gb": 0,
+      "ram_gb": 16
+    },
+    {
+      "category": "cpu",
+      "model": "Intel Core i5-7400",
+      "generation": "7th Gen",
+      "release_year": 2017,
+      "brand": "Intel",
+      "vram_gb": 0,
+      "ram_gb": 16
+    },
+    {
+      "category": "cpu",
+      "model": "Intel Core i3-7300",
+      "generation": "7th Gen",
+      "release_year": 2017,
+      "brand": "Intel",
+      "vram_gb": 0,
+      "ram_gb": 8
+    },
+    {
+      "category": "cpu",
+      "model": "Intel Core i7-8700K",
+      "generation": "8th Gen",
+      "release_year": 2017,
+      "brand": "Intel",
+      "vram_gb": 0,
+      "ram_gb": 16
+    },
+    {
+      "category": "cpu",
+      "model": "Intel Core i3-8100",
+      "generation": "8th Gen",
+      "release_year": 2017,
+      "brand": "Intel",
+      "vram_gb": 0,
+      "ram_gb": 8
+    },
+    {
+      "category": "cpu",
+      "model": "Intel Core i3-8350K",
+      "generation": "8th Gen",
+      "release_year": 2017,
+      "brand": "Intel",
+      "vram_gb": 0,
+      "ram_gb": 8
+    },
+    {
+      "category": "cpu",
+      "model": "Intel Core i5-8400",
+      "generation": "8th Gen",
+      "release_year": 2017,
+      "brand": "Intel",
+      "vram_gb": 0,
+      "ram_gb": 16
+    },
+    {
+      "category": "cpu",
+      "model": "Intel Core i5-8600K",
+      "generation": "8th Gen",
+      "release_year": 2017,
+      "brand": "Intel",
+      "vram_gb": 0,
+      "ram_gb": 16
+    },
+    {
+      "category": "cpu",
+      "model": "Intel Core i7-8700",
+      "generation": "8th Gen",
+      "release_year": 2017,
+      "brand": "Intel",
+      "vram_gb": 0,
+      "ram_gb": 16
+    },
+    {
+      "category": "cpu",
+      "model": "Intel Core i9-9900K",
+      "generation": "9th Gen",
+      "release_year": 2018,
+      "brand": "Intel",
+      "vram_gb": 0,
+      "ram_gb": 16
+    },
+    {
+      "category": "cpu",
+      "model": "Intel Core i7-9700K",
+      "generation": "9th Gen",
+      "release_year": 2018,
+      "brand": "Intel",
+      "vram_gb": 0,
+      "ram_gb": 16
+    },
+    {
+      "category": "cpu",
+      "model": "Intel Core i9-9900KF",
+      "generation": "9th Gen",
+      "release_year": 2018,
+      "brand": "Intel",
+      "vram_gb": 0,
+      "ram_gb": 16
+    },
+    {
+      "category": "cpu",
+      "model": "Intel Core i7-9700KF",
+      "generation": "9th Gen",
+      "release_year": 2018,
+      "brand": "Intel",
+      "vram_gb": 0,
+      "ram_gb": 16
+    },
+    {
+      "category": "cpu",
+      "model": "Intel Core i5-9600K",
+      "generation": "9th Gen",
+      "release_year": 2018,
+      "brand": "Intel",
+      "vram_gb": 0,
+      "ram_gb": 16
+    },
+    {
+      "category": "cpu",
+      "model": "Intel Core i5-9400F",
+      "generation": "9th Gen",
+      "release_year": 2019,
+      "brand": "Intel",
+      "vram_gb": 0,
+      "ram_gb": 16
+    },
+    {
+      "category": "cpu",
+      "model": "Intel Core i3-9100F",
+      "generation": "9th Gen",
+      "release_year": 2019,
+      "brand": "Intel",
+      "vram_gb": 0,
+      "ram_gb": 8
+    },
+    {
+      "category": "cpu",
+      "model": "Intel Core i9-10900K",
+      "generation": "10th Gen",
+      "release_year": 2020,
+      "brand": "Intel",
+      "vram_gb": 0,
+      "ram_gb": 32
+    },
+    {
+      "category": "cpu",
+      "model": "Intel Core i7-10700K",
+      "generation": "10th Gen",
+      "release_year": 2020,
+      "brand": "Intel",
+      "vram_gb": 0,
+      "ram_gb": 16
+    },
+    {
+      "category": "cpu",
+      "model": "Intel Core i3-10100",
+      "generation": "10th Gen",
+      "release_year": 2020,
+      "brand": "Intel",
+      "vram_gb": 0,
+      "ram_gb": 8
+    },
+    {
+      "category": "cpu",
+      "model": "Intel Core i5-10400F",
+      "generation": "10th Gen",
+      "release_year": 2020,
+      "brand": "Intel",
+      "vram_gb": 0,
+      "ram_gb": 16
+    },
+    {
+      "category": "cpu",
+      "model": "Intel Core i5-10600K",
+      "generation": "10th Gen",
+      "release_year": 2020,
+      "brand": "Intel",
+      "vram_gb": 0,
+      "ram_gb": 16
+    },
+    {
+      "category": "cpu",
+      "model": "Intel Core i7-11700K",
+      "generation": "11th Gen",
+      "release_year": 2021,
+      "brand": "Intel",
+      "vram_gb": 0,
+      "ram_gb": 16
+    },
+    {
+      "category": "cpu",
+      "model": "Intel Core i9-11900K",
+      "generation": "11th Gen",
+      "release_year": 2021,
+      "brand": "Intel",
+      "vram_gb": 0,
+      "ram_gb": 16
+    },
+    {
+      "category": "cpu",
+      "model": "Intel Core i5-11600K",
+      "generation": "11th Gen",
+      "release_year": 2021,
+      "brand": "Intel",
+      "vram_gb": 0,
+      "ram_gb": 16
+    },
+    {
+      "category": "cpu",
+      "model": "Intel Core i5-11400F",
+      "generation": "11th Gen",
+      "release_year": 2021,
+      "brand": "Intel",
+      "vram_gb": 0,
+      "ram_gb": 16
+    },
+    {
+      "category": "cpu",
+      "model": "Intel Core i5-12600K",
+      "generation": "12th Gen",
+      "release_year": 2021,
+      "brand": "Intel",
+      "vram_gb": 0,
+      "ram_gb": 16
+    },
+    {
+      "category": "cpu",
+      "model": "Intel Core i5-12400F",
+      "generation": "12th Gen",
+      "release_year": 2022,
+      "brand": "Intel",
+      "vram_gb": 0,
+      "ram_gb": 16
+    },
+    {
+      "category": "cpu",
+      "model": "Intel Core i5-12400",
+      "generation": "12th Gen",
+      "release_year": 2022,
+      "brand": "Intel",
+      "vram_gb": 0,
+      "ram_gb": 16
+    },
+    {
+      "category": "cpu",
+      "model": "Intel Core i7-12700F",
+      "generation": "12th Gen",
+      "release_year": 2022,
+      "brand": "Intel",
+      "vram_gb": 0,
+      "ram_gb": 32
+    },
+    {
+      "category": "cpu",
+      "model": "Intel Core i7-12700K",
+      "generation": "12th Gen",
+      "release_year": 2021,
+      "brand": "Intel",
+      "vram_gb": 0,
+      "ram_gb": 32
+    },
+    {
+      "category": "cpu",
+      "model": "Intel Core i9-12900K",
+      "generation": "12th Gen",
+      "release_year": 2021,
+      "brand": "Intel",
+      "vram_gb": 0,
+      "ram_gb": 32
+    },
+    {
+      "category": "cpu",
+      "model": "Intel Core i3-12100F",
+      "generation": "12th Gen",
+      "release_year": 2022,
+      "brand": "Intel",
+      "vram_gb": 0,
+      "ram_gb": 16
+    },
+    {
+      "category": "cpu",
+      "model": "Intel Core i3-13100F",
+      "generation": "13th Gen",
+      "release_year": 2023,
+      "brand": "Intel",
+      "vram_gb": 0,
+      "ram_gb": 16
+    },
+    {
+      "category": "cpu",
+      "model": "Intel Core i5-13400F",
+      "generation": "13th Gen",
+      "release_year": 2023,
+      "brand": "Intel",
+      "vram_gb": 0,
+      "ram_gb": 16
+    },
+    {
+      "category": "cpu",
+      "model": "Intel Core i5-13500",
+      "generation": "13th Gen",
+      "release_year": 2023,
+      "brand": "Intel",
+      "vram_gb": 0,
+      "ram_gb": 16
+    },
+    {
+      "category": "cpu",
+      "model": "Intel Core i3-14100F",
+      "generation": "14th Gen",
+      "release_year": 2024,
+      "brand": "Intel",
+      "vram_gb": 0,
+      "ram_gb": 16
+    },
+    {
+      "category": "cpu",
+      "model": "Intel Core i5-14400F",
+      "generation": "14th Gen",
+      "release_year": 2024,
+      "brand": "Intel",
+      "vram_gb": 0,
+      "ram_gb": 16
+    },
+    {
+      "category": "cpu",
+      "model": "Intel Core i5-14600K",
+      "generation": "14th Gen",
+      "release_year": 2023,
+      "brand": "Intel",
+      "vram_gb": 0,
+      "ram_gb": 32
+    },
+    {
+      "category": "cpu",
+      "model": "Intel Core i7-14700K",
+      "generation": "14th Gen",
+      "release_year": 2023,
+      "brand": "Intel",
+      "vram_gb": 0,
+      "ram_gb": 32
+    },
+    {
+      "category": "cpu",
+      "model": "Intel Core i9-14900K",
+      "generation": "14th Gen",
+      "release_year": 2023,
+      "brand": "Intel",
+      "vram_gb": 0,
+      "ram_gb": 32
+    },
+    {
+      "category": "cpu",
+      "model": "AMD Ryzen 7 1800X",
+      "generation": "Zen",
+      "release_year": 2017,
+      "brand": "AMD",
+      "vram_gb": 0,
+      "ram_gb": 16
+    },
+    {
+      "category": "cpu",
+      "model": "AMD Ryzen 7 1700X",
+      "generation": "Zen",
+      "release_year": 2017,
+      "brand": "AMD",
+      "vram_gb": 0,
+      "ram_gb": 16
+    },
+    {
+      "category": "cpu",
+      "model": "AMD Ryzen 7 1700",
+      "generation": "Zen",
+      "release_year": 2017,
+      "brand": "AMD",
+      "vram_gb": 0,
+      "ram_gb": 16
+    },
+    {
+      "category": "cpu",
+      "model": "AMD Ryzen 5 1600X",
+      "generation": "Zen",
+      "release_year": 2017,
+      "brand": "AMD",
+      "vram_gb": 0,
+      "ram_gb": 16
+    },
+    {
+      "category": "cpu",
+      "model": "AMD Ryzen 5 1600",
+      "generation": "Zen",
+      "release_year": 2017,
+      "brand": "AMD",
+      "vram_gb": 0,
+      "ram_gb": 16
+    },
+    {
+      "category": "cpu",
+      "model": "AMD Ryzen 5 1500X",
+      "generation": "Zen",
+      "release_year": 2017,
+      "brand": "AMD",
+      "vram_gb": 0,
+      "ram_gb": 8
+    },
+    {
+      "category": "cpu",
+      "model": "AMD Ryzen 5 1400",
+      "generation": "Zen",
+      "release_year": 2017,
+      "brand": "AMD",
+      "vram_gb": 0,
+      "ram_gb": 8
+    },
+    {
+      "category": "cpu",
+      "model": "AMD Ryzen 3 1300X",
+      "generation": "Zen",
+      "release_year": 2017,
+      "brand": "AMD",
+      "vram_gb": 0,
+      "ram_gb": 8
+    },
+    {
+      "category": "cpu",
+      "model": "AMD Ryzen 3 1200",
+      "generation": "Zen",
+      "release_year": 2017,
+      "brand": "AMD",
+      "vram_gb": 0,
+      "ram_gb": 8
+    },
+    {
+      "category": "cpu",
+      "model": "AMD Ryzen 7 2700",
+      "generation": "Zen+",
+      "release_year": 2018,
+      "brand": "AMD",
+      "vram_gb": 0,
+      "ram_gb": 16
+    },
+    {
+      "category": "cpu",
+      "model": "AMD Ryzen 5 2600X",
+      "generation": "Zen+",
+      "release_year": 2018,
+      "brand": "AMD",
+      "vram_gb": 0,
+      "ram_gb": 16
+    },
+    {
+      "category": "cpu",
+      "model": "AMD Ryzen 3 2200G",
+      "generation": "Zen+",
+      "release_year": 2018,
+      "brand": "AMD",
+      "vram_gb": 0,
+      "ram_gb": 8
+    },
+    {
+      "category": "cpu",
+      "model": "AMD Ryzen 3 2300X",
+      "generation": "Zen+",
+      "release_year": 2018,
+      "brand": "AMD",
+      "vram_gb": 0,
+      "ram_gb": 8
+    },
+    {
+      "category": "cpu",
+      "model": "AMD Ryzen 7 2700X",
+      "generation": "Zen+",
+      "release_year": 2018,
+      "brand": "AMD",
+      "vram_gb": 0,
+      "ram_gb": 16
+    },
+    {
+      "category": "cpu",
+      "model": "AMD Ryzen 5 2600",
+      "generation": "Zen+",
+      "release_year": 2018,
+      "brand": "AMD",
+      "vram_gb": 0,
+      "ram_gb": 16
+    },
+    {
+      "category": "cpu",
+      "model": "AMD Ryzen 5 2400G",
+      "generation": "Zen+",
+      "release_year": 2018,
+      "brand": "AMD",
+      "vram_gb": 0,
+      "ram_gb": 8
+    },
+    {
+      "category": "cpu",
+      "model": "AMD Ryzen 5 3600",
+      "generation": "Zen 2",
+      "release_year": 2019,
+      "brand": "AMD",
+      "vram_gb": 0,
+      "ram_gb": 16
+    },
+    {
+      "category": "cpu",
+      "model": "AMD Ryzen 7 3700X",
+      "generation": "Zen 2",
+      "release_year": 2019,
+      "brand": "AMD",
+      "vram_gb": 0,
+      "ram_gb": 16
+    },
+    {
+      "category": "cpu",
+      "model": "AMD Ryzen 9 3900X",
+      "generation": "Zen 2",
+      "release_year": 2019,
+      "brand": "AMD",
+      "vram_gb": 0,
+      "ram_gb": 32
+    },
+    {
+      "category": "cpu",
+      "model": "AMD Ryzen 9 3950X",
+      "generation": "Zen 2",
+      "release_year": 2019,
+      "brand": "AMD",
+      "vram_gb": 0,
+      "ram_gb": 32
+    },
+    {
+      "category": "cpu",
+      "model": "AMD Ryzen 7 3800X",
+      "generation": "Zen 2",
+      "release_year": 2019,
+      "brand": "AMD",
+      "vram_gb": 0,
+      "ram_gb": 16
+    },
+    {
+      "category": "cpu",
+      "model": "AMD Ryzen 5 3600X",
+      "generation": "Zen 2",
+      "release_year": 2019,
+      "brand": "AMD",
+      "vram_gb": 0,
+      "ram_gb": 16
+    },
+    {
+      "category": "cpu",
+      "model": "AMD Ryzen 3 3300X",
+      "generation": "Zen 2",
+      "release_year": 2020,
+      "brand": "AMD",
+      "vram_gb": 0,
+      "ram_gb": 16
+    },
+    {
+      "category": "cpu",
+      "model": "AMD Ryzen 3 3100",
+      "generation": "Zen 2",
+      "release_year": 2020,
+      "brand": "AMD",
+      "vram_gb": 0,
+      "ram_gb": 16
+    },
+    {
+      "category": "cpu",
+      "model": "AMD Ryzen 5 3400G",
+      "generation": "Zen+",
+      "release_year": 2019,
+      "brand": "AMD",
+      "vram_gb": 0,
+      "ram_gb": 16
+    },
+    {
+      "category": "cpu",
+      "model": "AMD Ryzen 3 3200G",
+      "generation": "Zen+",
+      "release_year": 2019,
+      "brand": "AMD",
+      "vram_gb": 0,
+      "ram_gb": 8
+    },
+    {
+      "category": "cpu",
+      "model": "AMD Ryzen 5 5600X",
+      "generation": "Zen 3",
+      "release_year": 2020,
+      "brand": "AMD",
+      "vram_gb": 0,
+      "ram_gb": 16
+    },
+    {
+      "category": "cpu",
+      "model": "AMD Ryzen 9 5950X",
+      "generation": "Zen 3",
+      "release_year": 2020,
+      "brand": "AMD",
+      "vram_gb": 0,
+      "ram_gb": 32
+    },
+    {
+      "category": "cpu",
+      "model": "AMD Ryzen 9 5900X",
+      "generation": "Zen 3",
+      "release_year": 2020,
+      "brand": "AMD",
+      "vram_gb": 0,
+      "ram_gb": 32
+    },
+    {
+      "category": "cpu",
+      "model": "AMD Ryzen 7 5700X",
+      "generation": "Zen 3",
+      "release_year": 2022,
+      "brand": "AMD",
+      "vram_gb": 0,
+      "ram_gb": 16
+    },
+    {
+      "category": "cpu",
+      "model": "AMD Ryzen 5 5600",
+      "generation": "Zen 3",
+      "release_year": 2022,
+      "brand": "AMD",
+      "vram_gb": 0,
+      "ram_gb": 16
+    },
+    {
+      "category": "cpu",
+      "model": "AMD Ryzen 7 5800X3D",
+      "generation": "Zen 3",
+      "release_year": 2022,
+      "brand": "AMD",
+      "vram_gb": 0,
+      "ram_gb": 16
+    },
+    {
+      "category": "cpu",
+      "model": "AMD Ryzen 5 7600",
+      "generation": "Zen 4",
+      "release_year": 2022,
+      "brand": "AMD",
+      "vram_gb": 0,
+      "ram_gb": 16
+    },
+    {
+      "category": "cpu",
+      "model": "AMD Ryzen 5 7600X",
+      "generation": "Zen 4",
+      "release_year": 2022,
+      "brand": "AMD",
+      "vram_gb": 0,
+      "ram_gb": 16
+    },
+    {
+      "category": "cpu",
+      "model": "AMD Ryzen 7 7700",
+      "generation": "Zen 4",
+      "release_year": 2022,
+      "brand": "AMD",
+      "vram_gb": 0,
+      "ram_gb": 16
+    },
+    {
+      "category": "cpu",
+      "model": "AMD Ryzen 9 7900",
+      "generation": "Zen 4",
+      "release_year": 2023,
+      "brand": "AMD",
+      "vram_gb": 0,
+      "ram_gb": 32
+    },
+    {
+      "category": "cpu",
+      "model": "AMD Ryzen 9 7900X3D",
+      "generation": "Zen 4",
+      "release_year": 2023,
+      "brand": "AMD",
+      "vram_gb": 0,
+      "ram_gb": 32
+    },
+    {
+      "category": "cpu",
+      "model": "AMD Ryzen 7 8700G",
+      "generation": "Zen 4",
+      "release_year": 2024,
+      "brand": "AMD",
+      "vram_gb": 0,
+      "ram_gb": 32
+    },
+    {
+      "category": "cpu",
+      "model": "AMD Ryzen 5 8600G",
+      "generation": "Zen 4",
+      "release_year": 2024,
+      "brand": "AMD",
+      "vram_gb": 0,
+      "ram_gb": 16
+    },
+    {
+      "category": "cpu",
+      "model": "AMD Ryzen 7 7800X3D",
+      "generation": "Zen 4",
+      "release_year": 2023,
+      "brand": "AMD",
+      "vram_gb": 0,
+      "ram_gb": 32
+    },
+    {
+      "category": "cpu",
+      "model": "AMD Ryzen 9 7950X3D",
+      "generation": "Zen 4",
+      "release_year": 2023,
+      "brand": "AMD",
+      "vram_gb": 0,
+      "ram_gb": 32
+    },
+    {
+      "category": "cpu",
+      "model": "Intel Core i9-13900K",
+      "generation": "13th Gen",
+      "release_year": 2022,
+      "brand": "Intel",
+      "vram_gb": 0,
+      "ram_gb": 32
+    },
+    {
+      "category": "cpu",
+      "model": "Intel Core i7-13700K",
+      "generation": "13th Gen",
+      "release_year": 2022,
+      "brand": "Intel",
+      "vram_gb": 0,
+      "ram_gb": 32
+    },
+    {
+      "category": "cpu",
+      "model": "Intel Core i5-13600K",
+      "generation": "13th Gen",
+      "release_year": 2022,
+      "brand": "Intel",
+      "vram_gb": 0,
+      "ram_gb": 16
+    },
+    {
+      "category": "cpu",
+      "model": "AMD Ryzen 9 7950X",
+      "generation": "Zen 4",
+      "release_year": 2022,
+      "brand": "AMD",
+      "vram_gb": 0,
+      "ram_gb": 32
+    },
+    {
+      "category": "cpu",
+      "model": "AMD Ryzen 9 7900X",
+      "generation": "Zen 4",
+      "release_year": 2022,
+      "brand": "AMD",
+      "vram_gb": 0,
+      "ram_gb": 32
+    },
+    {
+      "category": "cpu",
+      "model": "AMD Ryzen 7 7700X",
+      "generation": "Zen 4",
+      "release_year": 2022,
+      "brand": "AMD",
+      "vram_gb": 0,
+      "ram_gb": 16
+    },
+    {
+      "category": "cpu",
+      "model": "AMD Ryzen 7 5800X",
+      "generation": "Zen 3",
+      "release_year": 2020,
+      "brand": "AMD",
+      "vram_gb": 0,
+      "ram_gb": 16
+    },
+    {
+      "category": "cpu",
+      "model": "AMD Ryzen 9 9950X",
+      "generation": "Zen 5",
+      "release_year": 2024,
+      "brand": "AMD",
+      "vram_gb": 0,
+      "ram_gb": 32
+    },
+    {
+      "category": "cpu",
+      "model": "AMD Ryzen 9 9900X",
+      "generation": "Zen 5",
+      "release_year": 2024,
+      "brand": "AMD",
+      "vram_gb": 0,
+      "ram_gb": 32
+    },
+    {
+      "category": "cpu",
+      "model": "AMD Ryzen 7 9700X",
+      "generation": "Zen 5",
+      "release_year": 2024,
+      "brand": "AMD",
+      "vram_gb": 0,
+      "ram_gb": 16
+    },
+    {
+      "category": "cpu",
+      "model": "AMD Ryzen 5 9600X",
+      "generation": "Zen 5",
+      "release_year": 2024,
+      "brand": "AMD",
+      "vram_gb": 0,
+      "ram_gb": 16
+    },
+    {
+      "category": "cpu",
+      "model": "Intel Core Ultra 9 285K",
+      "generation": "Ultra (Desktop)",
+      "release_year": 2024,
+      "brand": "Intel",
+      "vram_gb": 0,
+      "ram_gb": 64
+    },
+    {
+      "category": "cpu",
+      "model": "Intel Core Ultra 9 285",
+      "generation": "Ultra (Desktop)",
+      "release_year": 2024,
+      "brand": "Intel",
+      "vram_gb": 0,
+      "ram_gb": 64
+    },
+    {
+      "category": "cpu",
+      "model": "Intel Core Ultra 7 265K",
+      "generation": "Ultra (Desktop)",
+      "release_year": 2024,
+      "brand": "Intel",
+      "vram_gb": 0,
+      "ram_gb": 64
+    },
+    {
+      "category": "cpu",
+      "model": "Intel Core Ultra 7 265",
+      "generation": "Ultra (Desktop)",
+      "release_year": 2024,
+      "brand": "Intel",
+      "vram_gb": 0,
+      "ram_gb": 64
+    },
+    {
+      "category": "cpu",
+      "model": "Intel Core Ultra 5 245K",
+      "generation": "Ultra (Desktop)",
+      "release_year": 2024,
+      "brand": "Intel",
+      "vram_gb": 0,
+      "ram_gb": 64
+    },
+    {
+      "category": "cpu",
+      "model": "Intel Core Ultra 5 245",
+      "generation": "Ultra (Desktop)",
+      "release_year": 2024,
+      "brand": "Intel",
+      "vram_gb": 0,
+      "ram_gb": 64
+    },
+    {
+      "category": "cpu",
+      "model": "Ryzen 9 9800X",
+      "generation": "Zen 5",
+      "release_year": 2024,
+      "brand": "AMD",
+      "vram_gb": 0,
+      "ram_gb": 32
+    },
+    {
+      "category": "cpu",
+      "model": "Ryzen 9 9800",
+      "generation": "Zen 5",
+      "release_year": 2024,
+      "brand": "AMD",
+      "vram_gb": 0,
+      "ram_gb": 32
+    },
+    {
+      "category": "cpu",
+      "model": "Ryzen 9 9800X3D",
+      "generation": "Zen 5 X3D",
+      "release_year": 2024,
+      "brand": "AMD",
+      "vram_gb": 0,
+      "ram_gb": 32
+    },
+    {
+      "category": "cpu",
+      "model": "Ryzen 7 9800X",
+      "generation": "Zen 5",
+      "release_year": 2024,
+      "brand": "AMD",
+      "vram_gb": 0,
+      "ram_gb": 32
+    },
+    {
+      "category": "cpu",
+      "model": "Ryzen 7 9800X3D",
+      "generation": "Zen 5 X3D",
+      "release_year": 2024,
+      "brand": "AMD",
+      "vram_gb": 0,
+      "ram_gb": 32
+    },
+    {
+      "category": "cpu",
+      "model": "Ryzen 5 9600X",
+      "generation": "Zen 5",
+      "release_year": 2024,
+      "brand": "AMD",
+      "vram_gb": 0,
+      "ram_gb": 16
+    },
+    {
+      "category": "gpu",
+      "model": "RTX 5050",
+      "generation": null,
+      "release_year": null,
+      "brand": "NVIDIA"
+    },
+    {
+      "category": "gpu",
+      "model": "Integrated Intel UHD",
+      "generation": null,
+      "release_year": null,
+      "brand": "Intel"
+    },
+    {
+      "category": "gpu",
+      "model": "Intel Arc A770",
+      "generation": null,
+      "release_year": null,
+      "brand": "Intel"
+    },
+    {
+      "category": "gpu",
+      "model": "Intel Arc A750",
+      "generation": null,
+      "release_year": null,
+      "brand": "Intel"
+    },
+    {
+      "category": "cpu",
+      "model": "Intel Xeon W-3300",
+      "generation": null,
+      "release_year": null,
+      "brand": "Intel"
+    },
+    {
+      "category": "cpu",
+      "model": "i9-14900K",
+      "generation": null,
+      "release_year": null,
+      "brand": ""
+    },
+    {
+      "category": "cpu",
+      "model": "i9-13900K",
+      "generation": null,
+      "release_year": null,
+      "brand": ""
+    },
+    {
+      "category": "cpu",
+      "model": "i9-12900K",
+      "generation": null,
+      "release_year": null,
+      "brand": ""
+    },
+    {
+      "category": "cpu",
+      "model": "i7-14700K",
+      "generation": null,
+      "release_year": null,
+      "brand": ""
+    },
+    {
+      "category": "cpu",
+      "model": "i7-13700K",
+      "generation": null,
+      "release_year": null,
+      "brand": ""
+    },
+    {
+      "category": "cpu",
+      "model": "i7-12700K",
+      "generation": null,
+      "release_year": null,
+      "brand": ""
+    },
+    {
+      "category": "cpu",
+      "model": "i5-14600K",
+      "generation": null,
+      "release_year": null,
+      "brand": ""
+    },
+    {
+      "category": "cpu",
+      "model": "i5-13600K",
+      "generation": null,
+      "release_year": null,
+      "brand": ""
+    },
+    {
+      "category": "cpu",
+      "model": "i5-12600K",
+      "generation": null,
+      "release_year": null,
+      "brand": ""
+    },
+    {
+      "category": "cpu",
+      "model": "i3-12100F",
+      "generation": null,
+      "release_year": null,
+      "brand": ""
+    },
+    {
+      "category": "cpu",
+      "model": "Ryzen 9 9950X",
+      "generation": null,
+      "release_year": null,
+      "brand": ""
+    },
+    {
+      "category": "cpu",
+      "model": "Ryzen 9 9950X3D",
+      "generation": null,
+      "release_year": null,
+      "brand": ""
+    },
+    {
+      "category": "cpu",
+      "model": "Ryzen 9 7950X",
+      "generation": null,
+      "release_year": null,
+      "brand": ""
+    },
+    {
+      "category": "cpu",
+      "model": "Ryzen 9 7900X",
+      "generation": null,
+      "release_year": null,
+      "brand": ""
+    },
+    {
+      "category": "cpu",
+      "model": "Ryzen 7 7800X3D",
+      "generation": null,
+      "release_year": null,
+      "brand": ""
+    },
+    {
+      "category": "cpu",
+      "model": "Ryzen 7 7700X",
+      "generation": null,
+      "release_year": null,
+      "brand": ""
+    },
+    {
+      "category": "cpu",
+      "model": "Ryzen 7 5800X3D",
+      "generation": null,
+      "release_year": null,
+      "brand": ""
+    },
+    {
+      "category": "cpu",
+      "model": "Ryzen 5 7600X",
+      "generation": null,
+      "release_year": null,
+      "brand": ""
+    },
+    {
+      "category": "cpu",
+      "model": "Ryzen 5 5600X",
+      "generation": null,
+      "release_year": null,
+      "brand": ""
+    }
+  ],
+  "benchmarks": {
+    "Cyberpunk 2077": {
+      "1920x1080": {
+        "High": {
+          "RTX 5090": {
+            "avg_fps": 145,
+            "p1_low": 115,
+            "p0_1_low": 105
+          },
+          "RTX 5080": {
+            "avg_fps": 130,
+            "p1_low": 105,
+            "p0_1_low": 95
+          },
+          "RTX 5070 Ti": {
+            "avg_fps": 120,
+            "p1_low": 100,
+            "p0_1_low": 90
+          },
+          "RTX 5070": {
+            "avg_fps": 110,
+            "p1_low": 95,
+            "p0_1_low": 85
+          },
+          "RTX 5060 Ti": {
+            "avg_fps": 100,
+            "p1_low": 85,
+            "p0_1_low": 75
+          },
+          "RTX 5060": {
+            "avg_fps": 85,
+            "p1_low": 75,
+            "p0_1_low": 65
+          },
+          "RTX 4090": {
+            "avg_fps": 120,
+            "p1_low": 95,
+            "p0_1_low": 85
+          },
+          "RTX 4080": {
+            "avg_fps": 105,
+            "p1_low": 85,
+            "p0_1_low": 75
+          },
+          "RTX 4070": {
+            "avg_fps": 90,
+            "p1_low": 75,
+            "p0_1_low": 65
+          },
+          "RTX 3090": {
+            "avg_fps": 95,
+            "p1_low": 80,
+            "p0_1_low": 70
+          },
+          "RTX 3080": {
+            "avg_fps": 80,
+            "p1_low": 70,
+            "p0_1_low": 60
+          },
+          "RX 7900 XTX": {
+            "avg_fps": 110,
+            "p1_low": 90,
+            "p0_1_low": 80
+          },
+          "RX 7900 XT": {
+            "avg_fps": 100,
+            "p1_low": 85,
+            "p0_1_low": 75
+          }
+        },
+        "Ultra": {
+          "RTX 5090": {
+            "avg_fps": 120,
+            "p1_low": 95,
+            "p0_1_low": 85
+          },
+          "RTX 5080": {
+            "avg_fps": 105,
+            "p1_low": 85,
+            "p0_1_low": 75
+          },
+          "RTX 5070 Ti": {
+            "avg_fps": 100,
+            "p1_low": 80,
+            "p0_1_low": 70
+          },
+          "RTX 5070": {
+            "avg_fps": 90,
+            "p1_low": 75,
+            "p0_1_low": 65
+          },
+          "RTX 5060 Ti": {
+            "avg_fps": 80,
+            "p1_low": 70,
+            "p0_1_low": 60
+          },
+          "RTX 5060": {
+            "avg_fps": 70,
+            "p1_low": 60,
+            "p0_1_low": 50
+          },
+          "RTX 4090": {
+            "avg_fps": 95,
+            "p1_low": 75,
+            "p0_1_low": 65
+          },
+          "RTX 4080": {
+            "avg_fps": 85,
+            "p1_low": 70,
+            "p0_1_low": 60
+          },
+          "RTX 4070": {
+            "avg_fps": 75,
+            "p1_low": 65,
+            "p0_1_low": 55
+          },
+          "RTX 3090": {
+            "avg_fps": 80,
+            "p1_low": 68,
+            "p0_1_low": 58
+          },
+          "RTX 3080": {
+            "avg_fps": 70,
+            "p1_low": 60,
+            "p0_1_low": 50
+          },
+          "RX 7900 XTX": {
+            "avg_fps": 90,
+            "p1_low": 75,
+            "p0_1_low": 65
+          },
+          "RX 7900 XT": {
+            "avg_fps": 85,
+            "p1_low": 72,
+            "p0_1_low": 62
+          }
+        }
+      },
+      "2560x1440": {
+        "High": {
+          "RTX 5090": {
+            "avg_fps": 110,
+            "p1_low": 92,
+            "p0_1_low": 82
+          },
+          "RTX 5080": {
+            "avg_fps": 100,
+            "p1_low": 85,
+            "p0_1_low": 75
+          },
+          "RTX 5070 Ti": {
+            "avg_fps": 95,
+            "p1_low": 80,
+            "p0_1_low": 70
+          },
+          "RTX 5070": {
+            "avg_fps": 85,
+            "p1_low": 75,
+            "p0_1_low": 65
+          },
+          "RTX 5060 Ti": {
+            "avg_fps": 75,
+            "p1_low": 65,
+            "p0_1_low": 55
+          },
+          "RTX 5060": {
+            "avg_fps": 65,
+            "p1_low": 58,
+            "p0_1_low": 48
+          },
+          "RTX 4090": {
+            "avg_fps": 90,
+            "p1_low": 75,
+            "p0_1_low": 65
+          },
+          "RTX 4080": {
+            "avg_fps": 80,
+            "p1_low": 68,
+            "p0_1_low": 58
+          },
+          "RTX 4070": {
+            "avg_fps": 70,
+            "p1_low": 60,
+            "p0_1_low": 50
+          },
+          "RTX 3090": {
+            "avg_fps": 75,
+            "p1_low": 65,
+            "p0_1_low": 55
+          },
+          "RTX 3080": {
+            "avg_fps": 65,
+            "p1_low": 55,
+            "p0_1_low": 45
+          },
+          "RX 7900 XTX": {
+            "avg_fps": 85,
+            "p1_low": 72,
+            "p0_1_low": 62
+          },
+          "RX 7900 XT": {
+            "avg_fps": 78,
+            "p1_low": 68,
+            "p0_1_low": 58
+          }
+        }
+      },
+      "3840x2160": {
+        "High": {
+          "RTX 5090": {
+            "avg_fps": 75,
+            "p1_low": 62,
+            "p0_1_low": 55
+          },
+          "RTX 5080": {
+            "avg_fps": 68,
+            "p1_low": 55,
+            "p0_1_low": 48
+          },
+          "RTX 5070 Ti": {
+            "avg_fps": 62,
+            "p1_low": 50,
+            "p0_1_low": 43
+          },
+          "RTX 5070": {
+            "avg_fps": 55,
+            "p1_low": 45,
+            "p0_1_low": 38
+          },
+          "RTX 5060 Ti": {
+            "avg_fps": 45,
+            "p1_low": 38,
+            "p0_1_low": 32
+          },
+          "RTX 5060": {
+            "avg_fps": 38,
+            "p1_low": 32,
+            "p0_1_low": 27
+          },
+          "RTX 4090": {
+            "avg_fps": 55,
+            "p1_low": 45,
+            "p0_1_low": 38
+          },
+          "RTX 4080": {
+            "avg_fps": 48,
+            "p1_low": 40,
+            "p0_1_low": 35
+          },
+          "RTX 4070": {
+            "avg_fps": 42,
+            "p1_low": 35,
+            "p0_1_low": 30
+          },
+          "RTX 3090": {
+            "avg_fps": 45,
+            "p1_low": 38,
+            "p0_1_low": 33
+          },
+          "RTX 3080": {
+            "avg_fps": 40,
+            "p1_low": 33,
+            "p0_1_low": 28
+          },
+          "RX 7900 XTX": {
+            "avg_fps": 50,
+            "p1_low": 42,
+            "p0_1_low": 37
+          },
+          "RX 7900 XT": {
+            "avg_fps": 47,
+            "p1_low": 40,
+            "p0_1_low": 35
+          }
+        }
+      }
+    },
+    "Elden Ring": {
+      "1920x1080": {
+        "High": {
+          "RTX 5090": {
+            "avg_fps": 220,
+            "p1_low": 185,
+            "p0_1_low": 165
+          },
+          "RTX 5080": {
+            "avg_fps": 200,
+            "p1_low": 170,
+            "p0_1_low": 150
+          },
+          "RTX 5070 Ti": {
+            "avg_fps": 185,
+            "p1_low": 160,
+            "p0_1_low": 140
+          },
+          "RTX 5070": {
+            "avg_fps": 170,
+            "p1_low": 145,
+            "p0_1_low": 125
+          },
+          "RTX 5060 Ti": {
+            "avg_fps": 155,
+            "p1_low": 135,
+            "p0_1_low": 115
+          },
+          "RTX 5060": {
+            "avg_fps": 135,
+            "p1_low": 120,
+            "p0_1_low": 100
+          },
+          "RTX 4090": {
+            "avg_fps": 180,
+            "p1_low": 150,
+            "p0_1_low": 130
+          },
+          "RTX 4080": {
+            "avg_fps": 160,
+            "p1_low": 135,
+            "p0_1_low": 115
+          },
+          "RTX 4070": {
+            "avg_fps": 140,
+            "p1_low": 120,
+            "p0_1_low": 100
+          },
+          "RTX 3090": {
+            "avg_fps": 150,
+            "p1_low": 130,
+            "p0_1_low": 110
+          },
+          "RTX 3080": {
+            "avg_fps": 130,
+            "p1_low": 110,
+            "p0_1_low": 90
+          },
+          "RX 7900 XTX": {
+            "avg_fps": 170,
+            "p1_low": 145,
+            "p0_1_low": 125
+          },
+          "RX 7900 XT": {
+            "avg_fps": 155,
+            "p1_low": 135,
+            "p0_1_low": 115
+          }
+        }
+      }
+    },
+    "Red Dead Redemption 2": {
+      "1920x1080": {
+        "High": {
+          "RTX 5090": {
+            "avg_fps": 170,
+            "p1_low": 145,
+            "p0_1_low": 125
+          },
+          "RTX 5080": {
+            "avg_fps": 155,
+            "p1_low": 130,
+            "p0_1_low": 110
+          },
+          "RTX 5070 Ti": {
+            "avg_fps": 145,
+            "p1_low": 125,
+            "p0_1_low": 105
+          },
+          "RTX 5070": {
+            "avg_fps": 130,
+            "p1_low": 115,
+            "p0_1_low": 95
+          },
+          "RTX 5060 Ti": {
+            "avg_fps": 120,
+            "p1_low": 105,
+            "p0_1_low": 85
+          },
+          "RTX 5060": {
+            "avg_fps": 105,
+            "p1_low": 95,
+            "p0_1_low": 75
+          },
+          "RTX 4090": {
+            "avg_fps": 140,
+            "p1_low": 120,
+            "p0_1_low": 100
+          },
+          "RTX 4080": {
+            "avg_fps": 125,
+            "p1_low": 105,
+            "p0_1_low": 85
+          },
+          "RTX 4070": {
+            "avg_fps": 110,
+            "p1_low": 95,
+            "p0_1_low": 75
+          },
+          "RTX 3090": {
+            "avg_fps": 120,
+            "p1_low": 100,
+            "p0_1_low": 80
+          },
+          "RTX 3080": {
+            "avg_fps": 105,
+            "p1_low": 90,
+            "p0_1_low": 70
+          },
+          "RX 7900 XTX": {
+            "avg_fps": 135,
+            "p1_low": 115,
+            "p0_1_low": 95
+          },
+          "RX 7900 XT": {
+            "avg_fps": 125,
+            "p1_low": 110,
+            "p0_1_low": 90
+          }
+        }
+      }
+    },
+    "Call of Duty: Modern Warfare II": {
+      "1920x1080": {
+        "High": {
+          "RTX 5090": {
+            "avg_fps": 280,
+            "p1_low": 230,
+            "p0_1_low": 210
+          },
+          "RTX 5080": {
+            "avg_fps": 250,
+            "p1_low": 210,
+            "p0_1_low": 190
+          },
+          "RTX 5070 Ti": {
+            "avg_fps": 230,
+            "p1_low": 195,
+            "p0_1_low": 175
+          },
+          "RTX 5070": {
+            "avg_fps": 210,
+            "p1_low": 180,
+            "p0_1_low": 160
+          },
+          "RTX 5060 Ti": {
+            "avg_fps": 190,
+            "p1_low": 165,
+            "p0_1_low": 145
+          },
+          "RTX 5060": {
+            "avg_fps": 170,
+            "p1_low": 150,
+            "p0_1_low": 130
+          },
+          "RTX 4090": {
+            "avg_fps": 220,
+            "p1_low": 180,
+            "p0_1_low": 160
+          },
+          "RTX 4080": {
+            "avg_fps": 200,
+            "p1_low": 170,
+            "p0_1_low": 150
+          },
+          "RTX 4070": {
+            "avg_fps": 180,
+            "p1_low": 155,
+            "p0_1_low": 135
+          },
+          "RTX 3090": {
+            "avg_fps": 190,
+            "p1_low": 165,
+            "p0_1_low": 145
+          },
+          "RTX 3080": {
+            "avg_fps": 170,
+            "p1_low": 150,
+            "p0_1_low": 130
+          },
+          "RX 7900 XTX": {
+            "avg_fps": 210,
+            "p1_low": 175,
+            "p0_1_low": 155
+          },
+          "RX 7900 XT": {
+            "avg_fps": 195,
+            "p1_low": 170,
+            "p0_1_low": 150
+          }
+        }
+      }
+    },
+    "Forza Horizon 5": {
+      "1920x1080": {
+        "High": {
+          "RTX 5090": {
+            "avg_fps": 200,
+            "p1_low": 175,
+            "p0_1_low": 155
+          },
+          "RTX 5080": {
+            "avg_fps": 180,
+            "p1_low": 160,
+            "p0_1_low": 140
+          },
+          "RTX 5070 Ti": {
+            "avg_fps": 170,
+            "p1_low": 150,
+            "p0_1_low": 130
+          },
+          "RTX 5070": {
+            "avg_fps": 155,
+            "p1_low": 140,
+            "p0_1_low": 120
+          },
+          "RTX 5060 Ti": {
+            "avg_fps": 140,
+            "p1_low": 125,
+            "p0_1_low": 105
+          },
+          "RTX 5060": {
+            "avg_fps": 125,
+            "p1_low": 115,
+            "p0_1_low": 95
+          },
+          "RTX 4090": {
+            "avg_fps": 160,
+            "p1_low": 140,
+            "p0_1_low": 120
+          },
+          "RTX 4080": {
+            "avg_fps": 145,
+            "p1_low": 125,
+            "p0_1_low": 105
+          },
+          "RTX 4070": {
+            "avg_fps": 130,
+            "p1_low": 115,
+            "p0_1_low": 95
+          },
+          "RTX 3090": {
+            "avg_fps": 140,
+            "p1_low": 120,
+            "p0_1_low": 100
+          },
+          "RTX 3080": {
+            "avg_fps": 125,
+            "p1_low": 110,
+            "p0_1_low": 90
+          },
+          "RX 7900 XTX": {
+            "avg_fps": 155,
+            "p1_low": 135,
+            "p0_1_low": 115
+          },
+          "RX 7900 XT": {
+            "avg_fps": 145,
+            "p1_low": 130,
+            "p0_1_low": 110
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "normalized": true,
+  "gpu_min": 72.6925,
+  "gpu_max": 301.8525,
+  "cpu_min": 174.8775,
+  "cpu_max": 302.31,
+  "target_gpu_min": 1.0,
+  "target_gpu_max": 2.6,
+  "target_cpu_min": 1.0,
+  "target_cpu_max": 2.4
+}

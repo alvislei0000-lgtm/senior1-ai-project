@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #76b900;
+  --primary-dark: #5a9f00;
+  --primary-light: #4a8c00;
+  --secondary-color: #2a2a2a;
+  --success-color: #76b900;
+  --warning-color: #ffb400;
+  --danger-color: #ff4444;
+  --info-color: #76b900;
+  /* Liquid-glass accents */
+  --lg-accent-1: #7ad3ff;
+  --lg-accent-2: #c48bff;
+  --lg-accent-3: #ffd77a;
+  --lg-accent-4: #7ef3b1;
+  --lg-glass-bg: linear-gradient(
+    to top,
+    rgba(118,185,0,0.42) 0%,
+    rgba(118,185,0,0.28) 18%,
+    rgba(40,40,40,0.55) 40%,
+    rgba(10,10,10,1) 100%
+  );
+  --lg-glass-border: rgba(118,185,0,0.10);
+  --bg-gradient: linear-gradient(135deg, #1a1a1a 0%, #0a0a0a 100%);
+  --bg-dark: #0a0a0a;
+  --bg-mid: #1e1e1e;
+  --text-color: #ffffff;
+  --card-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  --card-shadow-hover: 0 15px 40px rgba(0, 0, 0, 0.4);
+  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  width: 100%;
+  background: linear-gradient(135deg, #1a1a1a 0%, #0a0a0a 100%) !important;
+  background-attachment: fixed;
+  color: #ffffff;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+#root {
+  min-height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #1a1a1a 0%, #0a0a0a 100%) !important;
+  background-attachment: fixed;
+}
+
+/* 輸入元件預設文字顏色，避免被其他樣式覆蓋導致不可見 */
+input, textarea, select, button {
+  color: #ffffff;
+}
+
+/* 平滑滾動 */
+html {
+  scroll-behavior: smooth;
+}
+
+/* 自定義滾動條 */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #2a2a2a;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-dark);
+}
+
+/* Recharts override to match theme */
+.recharts-legend-icon, .recharts-surface path, .recharts-surface rect {
+  fill: var(--primary-color) !important;
+  stroke: none !important;
+}

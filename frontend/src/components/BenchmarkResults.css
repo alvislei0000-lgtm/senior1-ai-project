@@ -1,0 +1,585 @@
+.benchmark-results h2 {
+  margin-bottom: 2rem;
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.benchmark-results h2::before {
+  content: '📊';
+  font-size: 1.8rem;
+}
+
+.results-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+  gap: 2rem;
+}
+
+.result-card {
+  --white: hsl(0, 0%, 100%);
+  --black: hsl(240, 15%, 9%);
+  --paragraph: hsl(0, 0%, 83%);
+  --line: hsl(240, 9%, 17%);
+  --primary: var(--primary-color);
+
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1.25rem;
+  width: 100%;
+  /* vertical gradient from green at bottom to black at top
+     - green strength +40%, transition point moved up 20% */
+  background: linear-gradient(
+    to top,
+    rgba(118,185,0,0.42) 0%,
+    rgba(118,185,0,0.28) 18%,
+    rgba(40,40,40,0.55) 40%,
+    rgba(10,10,10,1) 100%
+  );
+  background-blend-mode: overlay;
+  background-color: rgba(10,10,10,1);
+  border-left: 4px solid rgba(118,185,0,0.10);
+  border-radius: 1rem;
+  /* reduce strong inset highlights so the green tint is visible */
+  box-shadow: 0px -6px 18px 0px rgba(0,0,0,0.25) inset, 0 12px 36px rgba(0,0,0,0.6);
+  overflow: hidden;
+}
+
+/* Stronger override to win against global glass background rules */
+/* (Previously had a strong override; removed to keep rules concise. If global rules still win, re-add a higher-specificity selector or !important.) */
+
+.result-card .card__border {
+  overflow: hidden;
+  pointer-events: none;
+  position: absolute;
+  z-index: -10;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: calc(100% + 2px);
+  height: calc(100% + 2px);
+  background-image: linear-gradient(0deg, hsl(0,0%,100%) -50%, hsl(0,0%,40%) 100%);
+  border-radius: 1rem;
+}
+
+.result-card .card__border::before {
+  content: "";
+  pointer-events: none;
+  position: fixed;
+  z-index: 200;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(0deg);
+  transform-origin: left;
+  width: 200%;
+  height: 8rem;
+  background-image: linear-gradient(
+    0deg,
+    hsla(0,0%,100%,0) 0%,
+    var(--primary) 40%,
+    var(--primary) 60%,
+    hsla(0,0%,40%,0) 100%
+  );
+  animation: rotate 12s linear infinite;
+}
+
+/* Title container similar to uiverse sample */
+.result-card .card_title__container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  z-index: 2;
+}
+.result-card .card_title {
+  font-size: 1.25rem;
+  color: var(--white);
+  font-weight: 800;
+}
+.result-card .card_paragraph {
+  margin-top: 0.25rem;
+  width: 70%;
+  font-size: 0.9rem;
+  color: var(--paragraph);
+}
+.result-card .line {
+  width: 100%;
+  height: 0.1rem;
+  background-color: var(--line);
+  border: none;
+  margin: 0.75rem 0;
+}
+
+/* list / notes styling */
+.result-card .card__list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.result-card .card__list_item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.result-card .card__list_item .check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1rem;
+  height: 1rem;
+  background-color: var(--primary);
+  border-radius: 50%;
+}
+.result-card .card__list_item .check .check_svg {
+  width: 0.75rem;
+  height: 0.75rem;
+  fill: var(--black);
+}
+.result-card .card__list_item .list_text {
+  font-size: 0.95rem;
+  color: var(--white);
+}
+
+/* CTA button like sample */
+.result-card .card-button {
+  cursor: pointer;
+  padding: 0.6rem 0.9rem;
+  width: 100%;
+  background-image: linear-gradient(0deg, rgba(118,185,0,1) 0%, rgba(90,159,0,1) 100%);
+  font-size: 0.95rem;
+  color: var(--white);
+  border: 0;
+  border-radius: 9999px;
+  box-shadow: inset 0 -2px 25px -4px rgba(255,255,255,0.18);
+  font-weight: 700;
+}
+
+.result-card .result-card__border {
+  overflow: hidden;
+  pointer-events: none;
+  position: absolute;
+  z-index: -10;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: calc(100% + 2px);
+  height: calc(100% + 2px);
+  background-image: linear-gradient(0deg, hsl(0,0%,100%) -50%, hsl(0,0%,40%) 100%);
+  border-radius: 1rem;
+}
+
+.result-card .result-card__border::before {
+  content: "";
+  pointer-events: none;
+  position: fixed;
+  z-index: 200;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(0deg);
+  transform-origin: left;
+  width: 200%;
+  height: 8rem;
+  background-image: linear-gradient(
+    0deg,
+    hsla(0,0%,100%,0) 0%,
+    var(--primary) 40%,
+    var(--primary) 60%,
+    hsla(0,0%,40%,0) 100%
+  );
+  animation: rotate 10s linear infinite;
+}
+
+.result-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: var(--bg-gradient);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.result-card:hover::before {
+  transform: scaleX(1);
+}
+
+.result-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: var(--card-shadow-hover);
+  border-color: var(--primary-color);
+}
+
+.result-card.incomplete {
+  border-color: var(--warning-color);
+  background: linear-gradient(135deg, #3a2a1a 0%, #2a1e1a 100%);
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    box-shadow: 0 4px 15px rgba(255, 180, 0, 0.3);
+  }
+  50% {
+    box-shadow: 0 4px 20px rgba(255, 180, 0, 0.5);
+  }
+}
+
+.incomplete-badge {
+  position: absolute;
+  top: 1.25rem;
+  right: 1.25rem;
+  background: var(--warning-color);
+  color: #ffffff;
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  box-shadow: 0 2px 8px rgba(255, 193, 7, 0.4);
+  animation: bounce 2s ease-in-out infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+}
+
+.result-header {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 3px solid #f0f0f0;
+  position: relative;
+}
+
+.result-header::after {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background: var(--bg-gradient);
+  border-radius: 2px;
+}
+
+.result-header h3 {
+  color: #ffffff;
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.result-header h3::before {
+  content: '🎮';
+  font-size: 1.3rem;
+}
+
+.result-meta {
+  display: flex;
+  gap: 1.5rem;
+  color: #cccccc;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.result-meta span {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4rem 0.8rem;
+  background: #2a2a2a;
+  border-radius: 8px;
+}
+
+.result-hardware {
+  margin-bottom: 1rem;
+}
+
+.hardware-item {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.hardware-item .label {
+  font-weight: 600;
+  color: #cccccc;
+  min-width: 50px;
+}
+
+.hardware-item .value {
+  color: #ffffff;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.result-fps {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+  padding: 2rem;
+  background-color: hsl(240, 15%, 9%);
+  background-image:
+    radial-gradient(at 88% 40%, hsla(240, 15%, 9%, 1) 0px, transparent 85%),
+    radial-gradient(at 49% 30%, hsla(240, 15%, 9%, 1) 0px, transparent 85%),
+    radial-gradient(at 14% 26%, hsla(240, 15%, 9%, 1) 0px, transparent 85%),
+    linear-gradient(135deg, rgba(255,255,255,0.01) 0%, rgba(255,255,255,0.005) 100%);
+  border-radius: 16px;
+  border: 1px solid rgba(255,255,255,0.04);
+  box-shadow: inset 0 -8px 30px rgba(255,255,255,0.02), 0 12px 40px rgba(0,0,0,0.6);
+  position: relative;
+  overflow: hidden;
+}
+
+.result-fps::before {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  top: -20%;
+  left: -50%;
+  width: 220%;
+  height: 10rem;
+  background-image: linear-gradient(
+    0deg,
+    rgba(255,255,255,0) 0%,
+    rgba(0,0,0,0) 30%,
+    var(--primary-color) 45%,
+    var(--primary-color) 55%,
+    rgba(255,255,255,0) 100%
+  );
+  transform-origin: left;
+  animation: rotate 28s linear infinite;
+  pointer-events: none;
+  mix-blend-mode: overlay;
+}
+
+.fps-item {
+  flex: 1 1 140px;
+  min-width: 140px;
+  text-align: center;
+  padding: 1.25rem 0.75rem;
+  border-radius: 12px;
+  transition: var(--transition);
+  position: relative;
+  z-index: 2;
+}
+
+.fps-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.5);
+}
+
+.fps-item::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 3px;
+  background: var(--bg-gradient);
+  transition: width 0.3s ease;
+}
+
+.fps-item:hover::after {
+  width: 60%;
+}
+
+/* Apply gradient background to the FPS value box instead of text gradient */
+.fps-item {
+  background: linear-gradient(180deg, rgba(0,0,0,0.35), rgba(0,0,0,0.45));
+  border-radius: 12px;
+  padding: 1.5rem 0.75rem;
+  box-shadow: inset 0 2px 8px rgba(255,255,255,0.02), 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.fps-item.gradient-bg {
+  background-image: linear-gradient(180deg, rgba(122,211,255,0.04) 0%, rgba(196,139,255,0.03) 40%, rgba(126,243,177,0.03) 100%);
+}
+
+/* Ensure FPS number text is solid white when gradient class was previously applied */
+.fps-value.gradient {
+  color: #ffffff !important;
+  background-image: none !important;
+  -webkit-background-clip: unset !important;
+  background-clip: unset !important;
+}
+
+.fps-label {
+  display: block;
+  font-size: 0.95rem;
+  color: #d9d9d9;
+  margin-bottom: 0.6rem;
+  font-weight: 600;
+  text-transform: none;
+  letter-spacing: 0.2px;
+}
+
+.fps-value {
+  display: block;
+  font-size: clamp(2.4rem, 6.5vw, 4.4rem);
+  font-weight: 700; /* slightly lighter for rounded fonts */
+  color: #ffffff;
+  text-shadow: 0 6px 18px rgba(0,0,0,0.7);
+  /* Rounded primary font stack for a softer look */
+  font-family: 'Poppins', 'Segoe UI Rounded', 'SF Pro Rounded', 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  letter-spacing: -0.4px;
+  line-height: 1;
+  position: relative;
+  white-space: nowrap;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* gradient text for FPS numbers */
+.fps-value.gradient {
+  color: transparent;
+  background-image: linear-gradient(90deg, #7ad3ff 0%, #c48bff 30%, #ffd77a 60%, #7ef3b1 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+/* Narrow variant (optional) - apply .fps-value--narrow to switch */
+.fps-value--narrow {
+  font-family: 'Roboto Condensed', 'Arial Narrow', 'Helvetica Neue', 'Inter', sans-serif;
+  font-weight: 800;
+  letter-spacing: -0.8px;
+}
+
+.fps-value::after {
+  content: 'FPS';
+  display: block;
+  margin-top: 0.35rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  color: #d0d0d0;
+  opacity: 0.95;
+  text-transform: none;
+}
+
+.result-source {
+  margin-bottom: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255,255,255,0.04);
+}
+
+.source-info {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  flex-wrap: wrap;
+}
+
+.source-label {
+  font-weight: 600;
+  color: #cccccc;
+  min-width: 80px;
+}
+
+.source-name,
+.source-time {
+  color: #ffffff;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.confidence-score {
+  font-weight: 600;
+}
+
+.result-notes {
+  margin-top: 1rem;
+  padding: 0.75rem;
+  background: #3a3a3a;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  color: #cccccc;
+  overflow-wrap: anywhere;
+}
+
+.source-snippet {
+  margin-top: 1rem;
+  padding: 0.75rem;
+  background: #3a3a3a;
+  border-radius: 6px;
+  border: 1px solid rgba(118,185,0,0.06);
+  position: relative;
+  z-index: 1; /* 避免被卡片背景/裝飾層蓋住導致按鈕點不到 */
+}
+
+.snippet-toggle {
+  cursor: pointer;
+  font-weight: 700;
+  color: var(--primary-color);
+  background: transparent;
+  border: none;
+  padding: 0.25rem 0;
+  margin-bottom: 0.5rem;
+  text-align: left;
+}
+
+.snippet-toggle:hover:not(:disabled) {
+  text-decoration: underline;
+}
+
+.snippet-toggle-disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.snippet-empty {
+  color: #cccccc;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.source-snippet pre {
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  background: #2a2a2a;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  overflow-x: auto;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+@media (max-width: 768px) {
+  .results-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* High-specificity forced override to win against global glass background rules */
+html body .results-section .result-card,
+html body .result-card {
+  background: linear-gradient(
+    to top,
+    rgba(118,185,0,0.42) 0%,
+    rgba(118,185,0,0.28) 18%,
+    rgba(40,40,40,0.55) 40%,
+    rgba(10,10,10,1) 100%
+  ) !important;
+  background-blend-mode: overlay !important;
+  border-left: 4px solid rgba(118,185,0,0.10) !important;
+  box-shadow: 0px -6px 18px 0px rgba(0,0,0,0.22) inset, 0 12px 36px rgba(0,0,0,0.6) !important;
+}

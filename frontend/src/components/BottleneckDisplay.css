@@ -1,0 +1,220 @@
+.bottleneck-display {
+  margin-top: 1.5rem;
+  padding: 2rem;
+  background: linear-gradient(135deg, #2a2a2a 0%, #1e1e1e 100%);
+  border-radius: 16px;
+  border-left: 5px solid var(--primary-color);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  animation: fadeInUp 0.5s ease-out;
+  position: relative;
+  overflow: hidden;
+}
+
+.bottleneck-display::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100px;
+  height: 100px;
+  background: radial-gradient(circle, rgba(118, 185, 0, 0.06) 0%, transparent 70%);
+  border-radius: 50%;
+  transform: translate(30%, -30%);
+}
+
+.bottleneck-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+  position: relative;
+  z-index: 1;
+}
+
+.bottleneck-header h4 {
+  color: #ffffff;
+  font-size: 1.3rem;
+  margin: 0;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.bottleneck-header h4::before {
+  content: '🔍';
+  font-size: 1.2rem;
+}
+
+.bottleneck-badge {
+  padding: 0.6rem 1.25rem;
+  border-radius: 25px;
+  color: white;
+  font-weight: 700;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  animation: pulse 2s ease-in-out infinite;
+  position: relative;
+  overflow: hidden;
+}
+
+.bottleneck-badge::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  transform: rotate(45deg);
+  animation: shine 3s infinite;
+}
+
+@keyframes shine {
+  0% {
+    transform: translateX(-100%) translateY(-100%) rotate(45deg);
+  }
+  100% {
+    transform: translateX(100%) translateY(100%) rotate(45deg);
+  }
+}
+
+.bottleneck-confidence {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  background: #3a3a3a;
+  border-radius: 6px;
+}
+
+.confidence-label {
+  font-weight: 600;
+  color: #cccccc;
+}
+
+.confidence-value {
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.bottleneck-reasoning {
+  margin-bottom: 1.5rem;
+  padding: 1.5rem;
+  background: #3a3a3a;
+  border-radius: 12px;
+  border-left: 4px solid var(--primary-color);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  position: relative;
+  z-index: 1;
+}
+
+.bottleneck-reasoning strong {
+  display: block;
+  margin-bottom: 0.75rem;
+  color: #ffffff;
+  font-size: 1.05rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.bottleneck-reasoning strong::before {
+  content: '💡';
+  font-size: 1.1rem;
+}
+
+.bottleneck-reasoning p {
+  margin: 0;
+  color: #cccccc;
+  line-height: 1.8;
+  font-size: 0.95rem;
+  overflow-wrap: anywhere;
+}
+
+.bottleneck-recommendations {
+  padding: 1.5rem;
+  background: #3a3a3a;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  position: relative;
+  z-index: 1;
+}
+
+.bottleneck-recommendations strong {
+  display: block;
+  margin-bottom: 1rem;
+  color: #ffffff;
+  font-size: 1.05rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.bottleneck-recommendations strong::before {
+  content: '💡';
+  font-size: 1.1rem;
+}
+
+.bottleneck-recommendations ul {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.bottleneck-recommendations li {
+  margin-bottom: 0.75rem;
+  color: #cccccc;
+  line-height: 1.7;
+  padding-left: 1.75rem;
+  position: relative;
+  font-size: 0.95rem;
+  transition: var(--transition);
+}
+
+.bottleneck-recommendations li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 24px;
+  height: 24px;
+  background: var(--success-color);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  font-weight: 700;
+  box-shadow: 0 2px 6px rgba(40, 167, 69, 0.3);
+}
+
+.bottleneck-recommendations li:hover {
+  color: #ffffff;
+  transform: translateX(4px);
+}
+
+.bottleneck-recommendations li:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .bottleneck-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .bottleneck-badge {
+    align-self: flex-start;
+  }
+}
+

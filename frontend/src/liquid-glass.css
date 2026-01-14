@@ -1,0 +1,135 @@
+/* Liquid glass theme: animated background + frosted glass cards */
+
+:root {
+  --lg-accent-1: #7ad3ff;
+  --lg-accent-2: #c48bff;
+  --lg-accent-3: #ffd77a;
+  --lg-accent-4: #7ef3b1;
+  --lg-glass-bg: rgba(255,255,255,0.06);
+  --lg-glass-border: rgba(255,255,255,0.12);
+  --lg-duration: 40s;
+}
+
+/* animated morphing gradient background */
+html, body, #root {
+  height: 100%;
+}
+body {
+  background: linear-gradient(120deg, var(--lg-accent-1), var(--lg-accent-2), var(--lg-accent-3), var(--lg-accent-4));
+  background-size: 400% 400%;
+  animation: lgGradientShift var(--lg-duration) ease infinite;
+  transition: background 0.6s ease;
+}
+
+@keyframes lgGradientShift {
+  0% { background-position: 0% 50%; }
+  25% { background-position: 50% 100%; }
+  50% { background-position: 100% 50%; }
+  75% { background-position: 50% 0%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* subtle noise overlay for depth */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image: radial-gradient(rgba(255,255,255,0.02) 1px, transparent 1px);
+  background-size: 20px 20px;
+  opacity: 0.15;
+  mix-blend-mode: overlay;
+  z-index: 0;
+}
+
+/* frosted glass cards */
+.search-section,
+.hardware-section,
+.results-section,
+.comparison-section,
+.result-card,
+.storage-options-container {
+  background: var(--lg-glass-bg) !important;
+  border: 1px solid var(--lg-glass-border) !important;
+  backdrop-filter: blur(12px) saturate(140%);
+  -webkit-backdrop-filter: blur(12px) saturate(140%);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.45);
+  border-radius: 20px;
+  transition: transform 0.28s var(--transition), box-shadow 0.28s var(--transition);
+}
+
+.search-section:hover,
+.hardware-section:hover,
+.results-section:hover,
+.comparison-section:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 50px rgba(0,0,0,0.5);
+}
+
+/* header sheen */
+.app-header {
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+/* glass buttons */
+.storage-button,
+.ram-button,
+.select-button,
+.search-button,
+.refresh-button,
+.brand-btn {
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.008));
+  border: 1px solid rgba(255,255,255,0.06);
+  color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.35);
+  transition: transform 0.16s var(--transition), box-shadow 0.16s var(--transition), background 0.16s ease;
+  text-transform: none;
+  font-weight: 600;
+  padding: 0.6rem 1.15rem;
+}
+
+/* subtle hover: gentle lift + softer shadow, no neon glow */
+.storage-button:hover,
+.ram-button:hover,
+.select-button:hover,
+.search-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.44);
+  background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01));
+  /* slight visible border tint instead of glow */
+  border-color: rgba(255,255,255,0.09);
+}
+
+/* ensure button text remains readable */
+.storage-button, .select-button, .search-button { color: #ffffff; }
+
+/* make the virtual list rows slightly translucent to match */
+.hardware-row { background: linear-gradient(180deg, rgba(255,255,255,0.01), transparent); }
+
+/* DEBUG: temporary visible outline to verify CSS is loading - will be removed after confirmation */
+/* debug outline removed */
+
+/* Force lg glass bg to our green→black gradient for cards (high specificity + important)
+   - increased green strength +20%, transition point moved up 25% */
+.result-card {
+  /* apply the green→black gradient only to result cards */
+  background: linear-gradient(
+    to top,
+    rgba(118,185,0,0.58) 0%,
+    rgba(118,185,0,0.38) 12%,
+    rgba(40,40,40,0.60) 15%,
+    rgba(10,10,10,1) 100%
+  ) !important;
+  border: 1px solid rgba(118,185,0,0.12) !important;
+  border-top-color: transparent !important; /* remove thin green top border */
+}
+
+/* Remove thin decorative top bar on result cards (::before) */
+.result-card::before,
+html body .result-card::before {
+  height: 0 !important;
+  background: transparent !important;
+  display: none !important;
+  content: '' !important;
+}

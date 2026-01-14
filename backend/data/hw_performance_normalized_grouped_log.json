@@ -1,0 +1,9 @@
+{
+  "grouped_log": true,
+  "groups": [
+    "nvidia",
+    "amd",
+    "integrated",
+    "intel_arc"
+  ]
+}

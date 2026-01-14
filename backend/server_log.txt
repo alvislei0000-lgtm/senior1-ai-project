@@ -1,0 +1,162 @@
+INFO:     Started server process [45436]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+µLªk³s±µ Redis¡A¨Ï¥Î°O¾ÐÅé§Ö¨ú: Error 10061 connecting to localhost:6379. µLªk³s½u¡A¦]¬°¥Ø¼Ð¹q¸£©Úµ´³s½u¡C.
+INFO:     127.0.0.1:60060 - "GET /api/hardware?category=cpu& HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60066 - "GET /api/hardware?category=cpu& HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60062 - "GET /api/hardware?category=gpu& HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60097 - "GET /api/hardware?category=gpu& HTTP/1.1" 200 OK
+HTTP ¿ù»~: https://www.techpowerup.com/gpu-specs/rtx-5090 - Client error '404 Not Found' for url 'https://www.techpowerup.com/gpu-specs/rtx-5090'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+HTTP ¿ù»~: https://www.gpucheck.com/graphics-card/rtx-5090/benchmark - Client error '404 Not Found' for url 'https://www.gpucheck.com/graphics-card/rtx-5090/benchmark'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+INFO:     127.0.0.1:60131 - "POST /api/benchmarks/search HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63876 - "GET /api/hardware?category=cpu& HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63887 - "GET /api/hardware?category=cpu& HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63877 - "GET /api/hardware?category=gpu& HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63891 - "GET /api/hardware?category=gpu& HTTP/1.1" 200 OK
+HTTP ¿ù»~: https://www.techpowerup.com/gpu-specs/rtx-5090 - Client error '404 Not Found' for url 'https://www.techpowerup.com/gpu-specs/rtx-5090'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+HTTP ¿ù»~: https://www.gpucheck.com/graphics-card/rtx-5090/benchmark - Client error '404 Not Found' for url 'https://www.gpucheck.com/graphics-card/rtx-5090/benchmark'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+INFO:     127.0.0.1:63963 - "POST /api/benchmarks/search HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51543 - "GET /api/hardware?category=cpu& HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51551 - "GET /api/hardware?category=cpu& HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51544 - "GET /api/hardware?category=gpu& HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51557 - "GET /api/hardware?category=gpu& HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58924 - "GET /api/hardware?category=cpu& HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58934 - "GET /api/hardware?category=cpu& HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58925 - "GET /api/hardware?category=gpu& HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58961 - "GET /api/hardware?category=gpu& HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62063 - "GET /api/hardware?category=cpu& HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62071 - "GET /api/hardware?category=cpu& HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62064 - "GET /api/hardware?category=gpu& HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65039 - "GET /api/hardware?category=gpu& HTTP/1.1" 200 OK
+HTTP ¿ù»~: https://www.techpowerup.com/gpu-specs/rtx-5070-ti - Client error '404 Not Found' for url 'https://www.techpowerup.com/gpu-specs/rtx-5070-ti'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+HTTP ¿ù»~: https://www.gpucheck.com/graphics-card/rtx-5070-ti/benchmark - Client error '404 Not Found' for url 'https://www.gpucheck.com/graphics-card/rtx-5070-ti/benchmark'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+INFO:     127.0.0.1:65194 - "POST /api/benchmarks/search HTTP/1.1" 200 OK
+HTTP ¿ù»~: https://www.techpowerup.com/gpu-specs/rtx-5070-ti - Client error '404 Not Found' for url 'https://www.techpowerup.com/gpu-specs/rtx-5070-ti'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+HTTP ¿ù»~: https://www.gpucheck.com/graphics-card/rtx-5070-ti/benchmark - Client error '404 Not Found' for url 'https://www.gpucheck.com/graphics-card/rtx-5070-ti/benchmark'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+INFO:     127.0.0.1:65245 - "POST /api/benchmarks/search HTTP/1.1" 200 OK
+HTTP ¿ù»~: https://www.techpowerup.com/gpu-specs/rtx-5070-ti - Client error '404 Not Found' for url 'https://www.techpowerup.com/gpu-specs/rtx-5070-ti'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+HTTP ¿ù»~: https://www.gpucheck.com/graphics-card/rtx-5070-ti/benchmark - Client error '404 Not Found' for url 'https://www.gpucheck.com/graphics-card/rtx-5070-ti/benchmark'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+INFO:     127.0.0.1:65280 - "POST /api/benchmarks/search HTTP/1.1" 200 OK
+HTTP ¿ù»~: https://www.techpowerup.com/gpu-specs/rtx-5070-ti - Client error '404 Not Found' for url 'https://www.techpowerup.com/gpu-specs/rtx-5070-ti'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+HTTP ¿ù»~: https://www.gpucheck.com/graphics-card/rtx-5070-ti/benchmark - Client error '404 Not Found' for url 'https://www.gpucheck.com/graphics-card/rtx-5070-ti/benchmark'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+INFO:     127.0.0.1:65320 - "POST /api/benchmarks/search HTTP/1.1" 200 OK
+HTTP ¿ù»~: https://www.techpowerup.com/gpu-specs/rtx-5070-ti - Client error '404 Not Found' for url 'https://www.techpowerup.com/gpu-specs/rtx-5070-ti'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+HTTP ¿ù»~: https://www.gpucheck.com/graphics-card/rtx-5070-ti/benchmark - Client error '404 Not Found' for url 'https://www.gpucheck.com/graphics-card/rtx-5070-ti/benchmark'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+INFO:     127.0.0.1:65351 - "POST /api/benchmarks/search HTTP/1.1" 200 OK
+HTTP ¿ù»~: https://www.techpowerup.com/gpu-specs/rtx-5070-ti - Client error '404 Not Found' for url 'https://www.techpowerup.com/gpu-specs/rtx-5070-ti'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+HTTP ¿ù»~: https://www.gpucheck.com/graphics-card/rtx-5070-ti/benchmark - Client error '404 Not Found' for url 'https://www.gpucheck.com/graphics-card/rtx-5070-ti/benchmark'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+INFO:     127.0.0.1:65482 - "POST /api/benchmarks/search HTTP/1.1" 200 OK
+HTTP ¿ù»~: https://www.techpowerup.com/gpu-specs/rtx-5070-ti - Client error '404 Not Found' for url 'https://www.techpowerup.com/gpu-specs/rtx-5070-ti'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+HTTP ¿ù»~: https://www.gpucheck.com/graphics-card/rtx-5070-ti/benchmark - Client error '404 Not Found' for url 'https://www.gpucheck.com/graphics-card/rtx-5070-ti/benchmark'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+HTTP ¿ù»~: https://www.techpowerup.com/gpu-specs/rtx-5070-ti - Client error '404 Not Found' for url 'https://www.techpowerup.com/gpu-specs/rtx-5070-ti'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+HTTP ¿ù»~: https://www.gpucheck.com/graphics-card/rtx-5070-ti/benchmark - Client error '404 Not Found' for url 'https://www.gpucheck.com/graphics-card/rtx-5070-ti/benchmark'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+HTTP ¿ù»~: https://www.techpowerup.com/gpu-specs/rtx-5070-ti - Client error '404 Not Found' for url 'https://www.techpowerup.com/gpu-specs/rtx-5070-ti'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+HTTP ¿ù»~: https://www.gpucheck.com/graphics-card/rtx-5070-ti/benchmark - Client error '404 Not Found' for url 'https://www.gpucheck.com/graphics-card/rtx-5070-ti/benchmark'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+HTTP ¿ù»~: https://www.techpowerup.com/gpu-specs/rtx-5070-ti - Client error '404 Not Found' for url 'https://www.techpowerup.com/gpu-specs/rtx-5070-ti'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+HTTP ¿ù»~: https://www.gpucheck.com/graphics-card/rtx-5070-ti/benchmark - Client error '404 Not Found' for url 'https://www.gpucheck.com/graphics-card/rtx-5070-ti/benchmark'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+HTTP ¿ù»~: https://www.techpowerup.com/gpu-specs/rtx-5070-ti - Client error '404 Not Found' for url 'https://www.techpowerup.com/gpu-specs/rtx-5070-ti'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+HTTP ¿ù»~: https://www.gpucheck.com/graphics-card/rtx-5070-ti/benchmark - Client error '404 Not Found' for url 'https://www.gpucheck.com/graphics-card/rtx-5070-ti/benchmark'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+HTTP ¿ù»~: https://www.techpowerup.com/gpu-specs/rtx-5070-ti - Client error '404 Not Found' for url 'https://www.techpowerup.com/gpu-specs/rtx-5070-ti'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+HTTP ¿ù»~: https://www.gpucheck.com/graphics-card/rtx-5070-ti/benchmark - Client error '404 Not Found' for url 'https://www.gpucheck.com/graphics-card/rtx-5070-ti/benchmark'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+HTTP ¿ù»~: https://www.techpowerup.com/gpu-specs/rtx-5070-ti - Client error '404 Not Found' for url 'https://www.techpowerup.com/gpu-specs/rtx-5070-ti'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+HTTP ¿ù»~: https://www.gpucheck.com/graphics-card/rtx-5070-ti/benchmark - Client error '404 Not Found' for url 'https://www.gpucheck.com/graphics-card/rtx-5070-ti/benchmark'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+HTTP ¿ù»~: https://www.techpowerup.com/gpu-specs/rtx-5070-ti - Client error '404 Not Found' for url 'https://www.techpowerup.com/gpu-specs/rtx-5070-ti'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+HTTP ¿ù»~: https://www.gpucheck.com/graphics-card/rtx-5070-ti/benchmark - Client error '404 Not Found' for url 'https://www.gpucheck.com/graphics-card/rtx-5070-ti/benchmark'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+HTTP ¿ù»~: https://www.techpowerup.com/gpu-specs/rtx-5070-ti - Client error '404 Not Found' for url 'https://www.techpowerup.com/gpu-specs/rtx-5070-ti'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+HTTP ¿ù»~: https://www.gpucheck.com/graphics-card/rtx-5070-ti/benchmark - Client error '404 Not Found' for url 'https://www.gpucheck.com/graphics-card/rtx-5070-ti/benchmark'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+HTTP ¿ù»~: https://www.techpowerup.com/gpu-specs/rtx-5070-ti - Client error '404 Not Found' for url 'https://www.techpowerup.com/gpu-specs/rtx-5070-ti'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+HTTP ¿ù»~: https://www.gpucheck.com/graphics-card/rtx-5070-ti/benchmark - Client error '404 Not Found' for url 'https://www.gpucheck.com/graphics-card/rtx-5070-ti/benchmark'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+HTTP ¿ù»~: https://www.techpowerup.com/gpu-specs/rtx-5070-ti - Client error '404 Not Found' for url 'https://www.techpowerup.com/gpu-specs/rtx-5070-ti'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+HTTP ¿ù»~: https://www.gpucheck.com/graphics-card/rtx-5070-ti/benchmark - Client error '404 Not Found' for url 'https://www.gpucheck.com/graphics-card/rtx-5070-ti/benchmark'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+HTTP ¿ù»~: https://www.techpowerup.com/gpu-specs/rtx-5070-ti - Client error '404 Not Found' for url 'https://www.techpowerup.com/gpu-specs/rtx-5070-ti'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+HTTP ¿ù»~: https://www.gpucheck.com/graphics-card/rtx-5070-ti/benchmark - Client error '404 Not Found' for url 'https://www.gpucheck.com/graphics-card/rtx-5070-ti/benchmark'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+HTTP ¿ù»~: https://www.techpowerup.com/gpu-specs/rtx-5070-ti - Client error '404 Not Found' for url 'https://www.techpowerup.com/gpu-specs/rtx-5070-ti'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+HTTP ¿ù»~: https://www.gpucheck.com/graphics-card/rtx-5070-ti/benchmark - Client error '404 Not Found' for url 'https://www.gpucheck.com/graphics-card/rtx-5070-ti/benchmark'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+HTTP ¿ù»~: https://www.techpowerup.com/gpu-specs/rtx-5070-ti - Client error '404 Not Found' for url 'https://www.techpowerup.com/gpu-specs/rtx-5070-ti'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+HTTP ¿ù»~: https://www.gpucheck.com/graphics-card/rtx-5070-ti/benchmark - Client error '404 Not Found' for url 'https://www.gpucheck.com/graphics-card/rtx-5070-ti/benchmark'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+HTTP ¿ù»~: https://www.techpowerup.com/gpu-specs/rtx-5070-ti - Client error '404 Not Found' for url 'https://www.techpowerup.com/gpu-specs/rtx-5070-ti'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+HTTP ¿ù»~: https://www.gpucheck.com/graphics-card/rtx-5070-ti/benchmark - Client error '404 Not Found' for url 'https://www.gpucheck.com/graphics-card/rtx-5070-ti/benchmark'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+HTTP ¿ù»~: https://www.techpowerup.com/gpu-specs/rtx-5070-ti - Client error '404 Not Found' for url 'https://www.techpowerup.com/gpu-specs/rtx-5070-ti'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+HTTP ¿ù»~: https://www.gpucheck.com/graphics-card/rtx-5070-ti/benchmark - Client error '404 Not Found' for url 'https://www.gpucheck.com/graphics-card/rtx-5070-ti/benchmark'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+HTTP ¿ù»~: https://www.techpowerup.com/gpu-specs/rtx-5070-ti - Client error '404 Not Found' for url 'https://www.techpowerup.com/gpu-specs/rtx-5070-ti'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+HTTP ¿ù»~: https://www.gpucheck.com/graphics-card/rtx-5070-ti/benchmark - Client error '404 Not Found' for url 'https://www.gpucheck.com/graphics-card/rtx-5070-ti/benchmark'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+HTTP ¿ù»~: https://www.techpowerup.com/gpu-specs/rtx-5070-ti - Client error '404 Not Found' for url 'https://www.techpowerup.com/gpu-specs/rtx-5070-ti'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+HTTP ¿ù»~: https://www.gpucheck.com/graphics-card/rtx-5070-ti/benchmark - Client error '404 Not Found' for url 'https://www.gpucheck.com/graphics-card/rtx-5070-ti/benchmark'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+HTTP ¿ù»~: https://www.techpowerup.com/gpu-specs/rtx-5070-ti - Client error '404 Not Found' for url 'https://www.techpowerup.com/gpu-specs/rtx-5070-ti'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+HTTP ¿ù»~: https://www.gpucheck.com/graphics-card/rtx-5070-ti/benchmark - Client error '404 Not Found' for url 'https://www.gpucheck.com/graphics-card/rtx-5070-ti/benchmark'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+HTTP ¿ù»~: https://www.techpowerup.com/gpu-specs/rtx-5070-ti - Client error '404 Not Found' for url 'https://www.techpowerup.com/gpu-specs/rtx-5070-ti'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+HTTP ¿ù»~: https://www.gpucheck.com/graphics-card/rtx-5070-ti/benchmark - Client error '404 Not Found' for url 'https://www.gpucheck.com/graphics-card/rtx-5070-ti/benchmark'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+HTTP ¿ù»~: https://www.techpowerup.com/gpu-specs/rtx-5070-ti - Client error '404 Not Found' for url 'https://www.techpowerup.com/gpu-specs/rtx-5070-ti'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+HTTP ¿ù»~: https://www.gpucheck.com/graphics-card/rtx-5070-ti/benchmark - Client error '404 Not Found' for url 'https://www.gpucheck.com/graphics-card/rtx-5070-ti/benchmark'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+HTTP ¿ù»~: https://www.techpowerup.com/gpu-specs/rtx-5070-ti - Client error '404 Not Found' for url 'https://www.techpowerup.com/gpu-specs/rtx-5070-ti'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+HTTP ¿ù»~: https://www.gpucheck.com/graphics-card/rtx-5070-ti/benchmark - Client error '404 Not Found' for url 'https://www.gpucheck.com/graphics-card/rtx-5070-ti/benchmark'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+HTTP ¿ù»~: https://www.techpowerup.com/gpu-specs/rtx-5070-ti - Client error '404 Not Found' for url 'https://www.techpowerup.com/gpu-specs/rtx-5070-ti'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+HTTP ¿ù»~: https://www.gpucheck.com/graphics-card/rtx-5070-ti/benchmark - Client error '404 Not Found' for url 'https://www.gpucheck.com/graphics-card/rtx-5070-ti/benchmark'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+HTTP ¿ù»~: https://www.techpowerup.com/gpu-specs/rtx-5070-ti - Client error '404 Not Found' for url 'https://www.techpowerup.com/gpu-specs/rtx-5070-ti'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+HTTP ¿ù»~: https://www.gpucheck.com/graphics-card/rtx-5070-ti/benchmark - Client error '404 Not Found' for url 'https://www.gpucheck.com/graphics-card/rtx-5070-ti/benchmark'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+INFO:     127.0.0.1:65505 - "POST /api/benchmarks/search HTTP/1.1" 200 OK

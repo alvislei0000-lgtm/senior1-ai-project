@@ -1,0 +1,9 @@
+{
+  "normalized_grouped": true,
+  "groups": [
+    "nvidia",
+    "amd",
+    "integrated",
+    "intel_arc"
+  ]
+}

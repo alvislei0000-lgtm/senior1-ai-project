@@ -1,0 +1,9 @@
+{
+  "grouped_piecewise": true,
+  "groups": [
+    "nvidia",
+    "amd",
+    "integrated",
+    "intel_arc"
+  ]
+}

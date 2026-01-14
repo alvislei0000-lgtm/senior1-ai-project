@@ -1,0 +1,20 @@
+[build]
+builder = "dockerfile"
+dockerfilePath = "./Dockerfile.backend"
+
+[deploy]
+healthcheckPath = "/api/health"
+restartPolicyType = "ON_FAILURE"
+restartPolicyMaxRetries = 3
+
+# 環境變數
+[env]
+PYTHONPATH = "/app"
+CACHE_TTL_HOURS = "24"
+REQUEST_DELAY_SECONDS = "1"
+MAX_CONCURRENT_REQUESTS = "3"
+
+# 資料庫設定（如果需要）
+REDIS_HOST = "${{ REDIS_HOST }}"
+REDIS_PORT = "${{ REDIS_PORT }}"
+REDIS_PASSWORD = "${{ REDIS_PASSWORD }}"
