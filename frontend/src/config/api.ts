@@ -1,15 +1,12 @@
-// API 配置
-const isProduction = import.meta.env.PROD;
-const isDevelopment = import.meta.env.DEV;
+// frontend/src/config/api.ts
 
-// 在開發環境使用本地後端，在生產環境使用環境變數或預設URL
-export const API_BASE_URL = isDevelopment
-  ? '' // 開發環境使用相對路徑，讓Vite代理處理
-  : (import.meta.env.VITE_API_BASE_URL || '');
+// 判斷是否為開發環境
+const isDevelopment = window.location.hostname === 'localhost';
 
-// 如果你在 Railway 上部署，環境變數會自動設定
-// 如果使用其他服務，請在部署平台設定 VITE_API_BASE_URL 環境變數
-// 例如:
-// Railway: https://your-project.up.railway.app
-// Render: https://your-service.onrender.com
-// Heroku: https://your-app.herokuapp.com
+// 關鍵修復：在 Render 生產環境使用相對路徑 ""，避免跨網域 (CORS) 問題
+export const API_BASE_URL = isDevelopment 
+  ? 'http://localhost:8000' 
+  : ''; 
+
+// 導出其他可能的配置
+export const API_TIMEOUT = 15000;
