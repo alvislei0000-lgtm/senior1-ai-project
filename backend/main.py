@@ -39,22 +39,20 @@ if __name__ == "__main__":
     port = int(os.getenv("PORT", 8000))
     uvicorn.run(app, host="0.0.0.0", port=port)
 
-app.mount("/", StaticFiles(directory="frontend/dist", html=True), name="static")
+# 取得前端 dist 目錄絕對路徑
+frontend_dist = os.path.join(os.getcwd(), "frontend/dist")
 
-# backend/main.py
+# 1. 掛載資產目錄 (JS, CSS, Images)
+app.mount("/assets", StaticFiles(directory=os.path.join(frontend_dist, "assets")), name="assets")
 
-# ... 其他代碼 ...
-
-# 修改掛載邏輯，增加判斷
-frontend_dist_path = os.path.join(os.getcwd(), "frontend", "dist")
-
-if os.path.exists(frontend_dist_path):
-    app.mount("/", StaticFiles(directory=frontend_dist_path, html=True), name="static")
-else:
-    # 如果找不到目錄，回傳一個提示頁面而不是直接崩潰
-    @app.get("/")
-    async def root():
-        return {
-            "status": "backend_ready",
-            "message": "前端尚未編譯。請確認 Render 的 Build Command 包含 'npm run build'"
-        }
+# 2. 核心修復：捕捉所有非 API 路徑並返回 index.html
+@app.get("/{full_path:path}")
+async def serve_react_app(full_path: str):
+    # 這裡確保 index.html 的路徑正確
+    index_path = os.path.join(frontend_dist, "index.html")
+    
+    # 如果請求的是 API，但不存在，這裡可以加判斷，否則統一給 index.html
+    if full_path.startswith("api/"):
+        raise HTTPException(status_code=404, detail="API route not found")
+        
+    return FileResponse(index_path)
