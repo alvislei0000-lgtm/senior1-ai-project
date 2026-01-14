@@ -1,35 +1,45 @@
+import os
 from fastapi import FastAPI, HTTPException
 from fastapi.staticfiles import StaticFiles
-from fastapi.responses import FileResponse # 必須確保有這行
-import os
+from fastapi.responses import FileResponse
+from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
 
-# --- 這裡放你原本的 API 路由 (例如 @app.get("/api/hardware")) ---
+# 允許跨域 (開發時很有用)
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+# 1. API 區域：所有的後端數據接口都要放在這裡
 @app.get("/api/health")
 async def health():
-    return {"status": "healthy"}
+    return {"status": "ok", "message": "Backend is running"}
 
-# --- 以下是關鍵的路由處理邏輯 ---
+# 2. 靜態資源區域：處理編譯後的 JS/CSS
+frontend_dist = os.path.join(os.getcwd(), "frontend", "dist")
+assets_path = os.path.join(frontend_dist, "assets")
 
-# 取得前端 dist 目錄的絕對路徑
-frontend_dist = os.path.join(os.getcwd(), "frontend/dist")
+if os.path.exists(assets_path):
+    app.mount("/assets", StaticFiles(directory=assets_path), name="assets")
 
-# 1. 先掛載靜態資源 (JS, CSS, 圖片)，這些檔案通常在 assets 資料夾內
-if os.path.exists(os.path.join(frontend_dist, "assets")):
-    app.mount("/assets", StaticFiles(directory=os.path.join(frontend_dist, "assets")), name="assets")
+# 3. SPA 路由區域：這是一個「全捕捉」邏輯
+@app.get("/{rest_of_path:path}")
+async def react_app(rest_of_path: str):
+    # 如果請求的是 api，但上面沒定義，直接給 404，不要給 index.html
+    if rest_of_path.startswith("api/"):
+        raise HTTPException(status_code=404, detail="API not found")
 
-# 2. 核心：捕捉所有「非 API」的路徑，並統一回傳 index.html
-# 這能解決重新整理 /benchmark 時出現 404 的問題
-@app.get("/{full_path:path}")
-async def serve_react_app(full_path: str):
-    # 如果路徑是 api 開頭但上面沒定義到，才給 404
-    if full_path.startswith("api/"):
-        raise HTTPException(status_code=404, detail="API 路由不存在")
+    # 否則，檢查 index.html 是否存在並回傳
+    index_file = os.path.join(frontend_dist, "index.html")
+    if os.path.exists(index_file):
+        return FileResponse(index_file)
     
-    # 其他所有路徑 (如 /benchmark) 通通回傳 index.html
-    index_path = os.path.join(frontend_dist, "index.html")
-    if os.path.exists(index_path):
-        return FileResponse(index_path)
-    
-    return {"error": "找不到前端編譯檔案 index.html，請檢查 Render 建置流程"}
+    # 如果連 index.html 都沒有，這代表前端沒編譯成功
+    return {
+        "error": "Frontend build not found",
+        "hint": "Check if 'npm run build' was executed in Render's Build Command"
+    }
