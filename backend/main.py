@@ -52,7 +52,18 @@ async def search_benchmarks(request: Request):
     }
 
 # --- 3. 靜態檔案與路徑定位 ---
-
+@app.get("/{full_path:path}")
+async def serve_react_app(full_path: str):
+    # 這是最強診斷工具：列出目前伺服器路徑下到底有什麼檔案
+    if full_path == "debug-path":
+        import os
+        return {
+            "cwd": os.getcwd(),
+            "list_dir_root": os.listdir("."),
+            "frontend_exists": os.path.exists("frontend"),
+            "dist_exists": os.path.exists("frontend/dist") if os.path.exists("frontend") else False
+        }
+    # ... 原本的代碼 ...
 # 自動獲取 frontend/dist 的絕對路徑
 # __file__ 是 backend/main.py，dirname 兩次回到根目錄
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
